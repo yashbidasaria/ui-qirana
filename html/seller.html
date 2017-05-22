@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>QIRANA - Seller</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/custom.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</head>
+<body style="background-color: #f5f5f5">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#">Project name</a>-->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+                <a class="navbar-brand" style="color:white">Welcome, VLDB Attendee Seller</a>-->
+            </form>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+
+</div>
+
+<div class="container" align="center">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color: silver">
+                    <h3 class="panel-title">Datasets Under Sale</h3>
+                </div>
+                <!--<div class="panel-body">-->
+
+                <!--</div>-->
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">EUHealth Data UK</a></li>
+                    <li class="list-group-item"><a href="#">USDA QuickStats</a></li>
+                    <li class="list-group-item"><a href="#">USDA Arms</a></li>
+                    <li class="list-group-item"><a href="#">GS Bus Stop Locations</a></li>
+                    <li class="list-group-item"><a href="#">House Price - England and Wales</a></li>
+                </ul>
+
+
+
+
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color: silver">
+                    <h3 class="panel-title">Domain Information - US Car Crash 2011</h3>
+                </div>
+                <!--<div class="panel-body">-->
+
+                <!--</div>-->
+                <table class="table table-bordered header-fixed">
+
+                    <thead> <tr> <th>Attributes</th> <th>Domain</th> </thead>
+                    <tbody>
+
+                    <tr><td>Age</td><td> 20-80</td></tr>
+                    <tr><td>Drug_Involvment</td><td> Yes, No</td></tr>
+                    <tr><td>Fatalities_in_crash</td><td> 0-100</td></tr>
+                    <tr><td>Gender</td><td> Male, Female</td></tr>
+                    <tr><td>Alcohol_Results</td><td>    </td></tr>
+                    <tr><td>Atmospheric_Condition</td><td> </td></tr>
+
+                </tbody>
+                    </table>
+
+
+
+
+            </div>
+            <button class="btn btn-primary"><span class="glyphicon glyphicon-upload"></span> Upload new dataset</button>
+            <br>
+            <br>
+            <button class="btn btn-primary"><span class="glyphicon glyphicon-upload"></span> Upload mock workload</button>
+        </div>
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color: silver">
+                    <h3 class="panel-title"><p class="pull-left">US Car Crash 2011</p></h3>
+                    <br>
+
+
+
+
+
+                </div>
+                <div class="panel-body">
+                    <p align="left"> <b>Dataset price : </b>$100<sup><span class="glyphicon glyphicon-edit" style="font-size: x-small"></span></sup></p>
+                    <p align="left"><b>Dataset description : </b></p><textarea class="form-control custom-control" rows="3" style="resize:none" >
+                            The dataset is collection of data about people involved in car accidents with fatalities, the final injuries, alcohol/drugs tests, and other relevant data about the accident and the person. ** Original Source ** Fatality Analysis Reporting System (FARS) Encyclopedia <a href="#">http://www-fars.nhtsa.dot.gov</a>
+                    </textarea>
+                    <p align="left"><br> <b>Schema Information : </b></p> <textarea class="form-control custom-control" rows="1" style="resize:none" >
+                        Single relation called crash. 71,115 tuples in total.
+                    </textarea>
+                    <p class="pull-left"><br> <b>Support Set Size : </b><input type="number" min="0" step="1" /></p>
+                    <br>
+                    <br><br>
+                    <div class="row">
+                        <div class="dropdown pull-left">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Weighted Coverage
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Weighted Coverage</a></li>
+                                <li><a href="#">Uniform Entropy Gain</a></li>
+                                <li><a href="#">Shannon Entropy</a></li>
+                                <li><a href="#">q-Entropy</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <br><br><br>
+
+                    <p align="left"><br> <b>Price Points  </b><span class="glyphicon glyphicon-plus-sign"></span></p>
+                    <div class="input-group">
+                        <textarea class="form-control custom-control" rows="1" style="resize:none" >
+                            select * from crash where state = 'Wisconsin'
+                        </textarea>
+                        <span class="input-group-btn">
+                                    <button class="btn btn-default">
+                                        <span>$10</span>
+                                    </button>
+                            </span>
+                    </div>
+                    <div class="input-group">
+                        <textarea class="form-control custom-control" rows="1" style="resize:none" >
+                            select Age from crash
+                        </textarea>
+                        <span class="input-group-btn">
+                                    <button class="btn btn-default">
+                                        <span>$0</span>
+                                    </button>
+                            </span>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary pull-left">Generate Support Set and Weights</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div> <!-- /container -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="../js/chart.js"></script>
+</body>
+
+
+</html>
