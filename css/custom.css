@@ -29,10 +29,18 @@
     width: 50%;
     float: left;
 }
+#feature-carousel {
+    min-height: 200px;
+}
+
 
 #chartt {
     min-width: 110px;
     max-width: 300px;
     height: 300px;
     margin: 0 auto
+}
+.listWrapper {
+    max-height:250px;
+    overflow-y:auto;
 }
