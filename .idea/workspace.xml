@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dbee9044-bdbd-41de-b3f7-d5ab07417dfb" name="Default" comment="metro ui">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/fonts/metro.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/fonts/metro.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/fonts/metro.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/fonts/metro.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/fonts/metro.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/fonts/metro.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/Battlefield_4_Icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/Blank_Folder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/Calendar-Next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/Checkmark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/Crysis-2-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/Folder-Rename.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/MSFT_logo_png.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/Metro_author_100x20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/Metro_member_100x20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/Metro_moster_100x20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/Metro_unior_100x20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/Notebook-Save.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/PhpStorm_boxshot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/WorldofTanks.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/access.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/bd-rom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/bizspark_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/bizspark_b_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/clear-day.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/clear-night.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/clouds2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/cloudy.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/css-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/disk-sys.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/excel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ak.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/al.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/az.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ca.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/co.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ct.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/de.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/fl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ga.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/hi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ia.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/id.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/il.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/in.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ks.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ky.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/la.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ma.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/md.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/me.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/mi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/mn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/mo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ms.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/mt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/nc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/nd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ne.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/nh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/nj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/nm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/nv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/oh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ok.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/or.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/pa.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ri.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/sc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/sd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/tn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/tx.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/ut.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/va.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/vt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/wa.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/wi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/wv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/flags/wy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/fog.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/folder-documents.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/folder-downloads.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/folder-images.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/folder-music.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/folder-videos.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/folder_with_file.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/grid2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/group.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/halo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/hard-drive.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/icon-minus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/icon-plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/jek_vorobey.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/jeki_chan.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/jetbrains.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/jolie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/keycdn-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/live1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/live2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/location.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/logo_JetBrains_4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/me.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/me_150.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/myface.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/obama.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/onenote.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/org-01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/outlook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/partly-cloudy-day.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/partly-cloudy-night.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/photo_album.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/phpstorm_7_eap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/power.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/powerpoint.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/rain.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/round.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/shvarcenegger.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/sleet.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/snow.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/spface.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/spface2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/toggle-minus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/vin_d.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/whats-new.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/wind.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/wn8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/word.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/x-box.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/zadorozhnyi.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/res/oceans.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/res/oceans.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/fonts/metro.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/fonts/metro.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/fonts/metro.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro-colors.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro-colors.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro-icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro-icons.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro-rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro-rtl.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro-schemes.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro-schemes.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/css/metro.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/fonts/metro.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/fonts/selection.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/js/metro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/build/js/metro.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/accordion-in-tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/accordion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/animations.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/appbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/audio-player.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/button-groups.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/buttons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/calendar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/carousel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/charms.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/colors.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/countdown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/css/docs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/css/metro-colors.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/css/metro-icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/css/metro-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/css/metro-rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/css/metro-schemes.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/css/metro.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/dataTables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/datepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/dialog-ajax-demo-data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/dialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/donut.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/draggable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/dropdown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/easing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/events.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/flexgrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/fluent-menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/font.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/fonts/metro.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/grid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/helpers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/hints.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/hotkeys.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/icon_PhpStorm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/images/keycdn-logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/inputs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/docs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/ga.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/jquery-2.1.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/jquery-3.1.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/jquery-3.1.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/jquery.dataTables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/metro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-apollo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-clj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-dart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-erlang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-go.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-hs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-lisp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-llvm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-matlab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-mumps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-n.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-pascal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-proto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-rd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-scala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-tcl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-tex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-vb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-vhdl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-wiki.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-xq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/lang-yaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/prettify/run_prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/js/select2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/keypad.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/listview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/notify.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/panels.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/popovers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/preloaders.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/presenter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/progressbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/rating.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/requirejs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/rtl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/select2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/sliders.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/stepper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/streamer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/tabcontrol.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/tables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/templates/admin-sidebar-appbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/templates/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/templates/news-portal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/templates/start-screen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/templates/template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/test-cdn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/tiles-touch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/tiles.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/tpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/treeview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/typography.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/validator-test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/validator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/video-player.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/windows.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/wizard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/wizard2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/docs/wizard_in_dialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/fonts/metro.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/fonts/selection.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/global.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/initiator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/requirements.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/utils/core-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/utils/easing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/utils/hotkeys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/utils/mousewheel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/utils/pre-code.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/utils/touch-handler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/utils/tpl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widget.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/accordion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/appbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/audio-player.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/button-groups.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/charm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/clock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/countdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/datatable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/donut.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/draggable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/fit-image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/fluentmenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/grid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/hint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/inputs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/keypad.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/listview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/notify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/panel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/popovers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/preloaders.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/presenter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/progressbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/rating.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/slider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/stepper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/streamer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/tabcontrol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/tile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/treeview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/validator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/video-player.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/window.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/wizard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/js/widgets/wizard2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/accordion.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/animations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/appbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/audio-player.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/breadcrumbs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/calendar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/carousel.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/charms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/clock.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/colors.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/countdown.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/datatable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/dialog.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/donut.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/flex-grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/flex.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/fluent-menu.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/fonts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/hints.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/images.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/inputs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/keypad.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/layout.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/lists.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/listview.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/menu.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/metro-colors.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/metro-icons-animation.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/metro-icons-content.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/metro-icons-mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/metro-icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/metro-responsive.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/metro-rtl.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/metro-schemes.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/metro.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/notify.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/popovers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/preloaders.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/presenter.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/progressbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/rating.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/reset.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/scheme-builder.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/select2.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/sidebar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/slider.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/stepper.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/streamer.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/tabcontrol.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/tables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/tiles.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/toolbars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/transform.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/treeview.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/typography.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/utils.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/vars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/video-player.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/windows.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/wizard.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/less/wizard2.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/metro.nuspec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/test/RequireJS/css/metro.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/test/RequireJS/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/test/RequireJS/scripts/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/test/RequireJS/scripts/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/test/RequireJS/scripts/metro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metro-UI-CSS-master/test/RequireJS/scripts/require.js" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-100">
+              <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#50#0" expanded="false" />
+                <element signature="e#4472#5858#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buyer_2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/buyer_2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="84" lean-forward="false" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
+              <folding>
+                <element signature="e#2621#2942#0" expanded="false" />
+                <marker date="1498577208698" expanded="false" signature="2864:2875" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buyer_new_partial.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/buyer_new_partial.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+              <folding>
+                <element signature="e#2099#3097#0" expanded="false" />
+                <marker date="1498530333518" expanded="false" signature="2169:2193" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buyer2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/buyer2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>selec</find>
+      <find>select</find>
+      <find>Complete</find>
+      <find>gly</find>
+      <find>chart</find>
+      <find>&lt;</find>
+      <find>header</find>
+      <find>all</find>
+      <find>adver</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/Downloads/portal-2/portal-2/index.html" />
+        <option value="$PROJECT_DIR$/html/buyer.html" />
+        <option value="ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
+        <option value="$PROJECT_DIR$/html/test.html" />
+        <option value="$PROJECT_DIR$/html/buyer_initial_info.html" />
+        <option value="$PROJECT_DIR$/html/buyer_new.html" />
+        <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/Metro-UI-CSS-master/docs/templates/admin-sidebar-appbar.html" />
+        <option value="$PROJECT_DIR$/html/buyer_new_partial.html" />
+        <option value="$PROJECT_DIR$/html/buyer_2.html" />
+        <option value="vm:85" />
+        <option value="ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js" />
+        <option value="extensions::messaging" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="vm:778" />
+        <option value="vm:1071" />
+        <option value="$PROJECT_DIR$/html/buyer2.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1370" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qirana-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qirana-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qirana-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qirana-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/portal-2/portal-2/index.html" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.buyer_2.html">
+    <configuration default="false" name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/qirana-ui/html/test.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="buyer_2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" uri="http://localhost:63342/qirana-ui/html/buyer_2.html">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.buyer_2.html" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.buyer_2.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbee9044-bdbd-41de-b3f7-d5ab07417dfb" name="Default" comment="" />
+      <created>1495503761211</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1495503761211</updated>
+      <workItem from="1495503766942" duration="1856000" />
+      <workItem from="1495556257493" duration="37206000" />
+      <workItem from="1495998950579" duration="3339000" />
+      <workItem from="1496112594525" duration="11255000" />
+      <workItem from="1496272614287" duration="24468000" />
+      <workItem from="1496348978698" duration="181000" />
+      <workItem from="1496427779419" duration="1165000" />
+      <workItem from="1496429782781" duration="846000" />
+      <workItem from="1496932010741" duration="4303000" />
+      <workItem from="1497023494849" duration="1697000" />
+      <workItem from="1497025231654" duration="5615000" />
+      <workItem from="1497123864817" duration="35875000" />
+      <workItem from="1497549994983" duration="2746000" />
+      <workItem from="1497813586515" duration="2817000" />
+      <workItem from="1497882234035" duration="32750000" />
+      <workItem from="1498441345776" duration="2518000" />
+      <workItem from="1498489790564" duration="12888000" />
+      <workItem from="1498573052198" duration="12412000" />
+      <workItem from="1498759977558" duration="1499000" />
+    </task>
+    <task id="LOCAL-00001" summary="basic ui with tags and search">
+      <created>1497550439847</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497550439847</updated>
+    </task>
+    <task id="LOCAL-00002" summary="buyer">
+      <created>1498760031991</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1498760031991</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="195436000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2437223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17507887" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2992" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2112" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2112" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17507887" sideWeight="0.50292826" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2437223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.352" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="basic ui with tags and search" />
+    <MESSAGE value="buyer" />
+    <option name="LAST_COMMIT_MESSAGE" value="buyer" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="16" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/html/buyer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2822">
+          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2363">
+          <caret line="139" column="47" lean-forward="false" selection-start-line="139" selection-start-column="47" selection-end-line="139" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+            <element signature="e#4472#5858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="48" lean-forward="false" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
+          <folding>
+            <element signature="e#2621#2942#0" expanded="false" />
+            <marker date="1498577208698" expanded="false" signature="2864:2875" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="135" lean-forward="false" selection-start-line="8" selection-start-column="135" selection-end-line="8" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2822">
+          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="46" lean-forward="false" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+          <folding>
+            <element signature="e#2621#2942#0" expanded="false" />
+            <marker date="1498577208698" expanded="false" signature="2864:2875" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="135" lean-forward="false" selection-start-line="8" selection-start-column="135" selection-end-line="8" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+            <element signature="e#4472#5858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2822">
+          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="46" lean-forward="false" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+          <folding>
+            <element signature="e#2621#2942#0" expanded="false" />
+            <marker date="1498577208698" expanded="false" signature="2864:2875" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="135" lean-forward="false" selection-start-line="8" selection-start-column="135" selection-end-line="8" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="104" lean-forward="false" selection-start-line="7" selection-start-column="104" selection-end-line="7" selection-end-column="104" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+            <element signature="e#4472#5858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="116" column="40" lean-forward="false" selection-start-line="116" selection-start-column="40" selection-end-line="116" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="104" column="33" lean-forward="true" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+            <element signature="e#4472#5858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+            <element signature="e#4472#5858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2635">
+          <caret line="155" column="18" lean-forward="true" selection-start-line="155" selection-start-column="18" selection-end-line="155" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" column="35" lean-forward="true" selection-start-line="93" selection-start-column="24" selection-end-line="95" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+            <element signature="e#4472#5858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="130" column="30" lean-forward="true" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-reboot.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3383">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8058">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/portal-2/portal-2/index.html" />
+    <entry file="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="135" lean-forward="false" selection-start-line="8" selection-start-column="135" selection-end-line="8" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_initial_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-952">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Metro-UI-CSS-master/docs/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-799">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Metro-UI-CSS-master/docs/templates/news-portal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Metro-UI-CSS-master/docs/templates/start-screen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3332">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Metro-UI-CSS-master/docs/tiles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Metro-UI-CSS-master/docs/templates/admin-sidebar-appbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="127" column="49" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="84" lean-forward="false" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
+          <folding>
+            <element signature="e#2621#2942#0" expanded="false" />
+            <marker date="1498577208698" expanded="false" signature="2864:2875" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+            <element signature="e#4472#5858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer_new_partial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+          <folding>
+            <element signature="e#2099#3097#0" expanded="false" />
+            <marker date="1498530333518" expanded="false" signature="2169:2193" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/buyer2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

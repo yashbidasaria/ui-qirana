@@ -1,0 +1,87 @@
+<div>
+    <ul class="h-menu" style="background-color: black">
+
+        <li class="place-right no-hovered">
+            <form>
+                <div class="input-control text" style="width: 250px; margin-right: 10px">
+                    <input type="text" placeholder="Search..." ng-model = "search">
+
+                </div>
+            </form>
+        </li>
+        <!--li >
+
+                <tags-input style="width: 250px;" ng-model="tags"></tags-input>
+        </li-->
+
+
+    </ul>
+</div>
+
+
+
+<div class="page-content">
+
+    <div class="row" style="height: 100%">
+        <div class="col-sm-3">
+        <div class="cell size-x200" id="cell-sidebar" style="background-color: #71b1d1; height: 100%">
+            <ul class="sidebar">
+                <li class = "border" ><a href="#">
+                    <span class="mif-apps icon"></span>
+                    <span class="title">all items</span>
+                    <span class="counter">{{databases.length}}</span>
+                </a></li>
+                <li class = "border-0" ng-repeat = "t in tags"><a href="#">
+                    <span class="mif-minus icon"></span>
+                    <span class="title">{{t}}</span>
+                </a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="col-sm-8">
+        <div class="cell auto-size padding20 bg-white" id="cell-content">
+            <h2 class="text-light">Available Datasets </h2>
+            <hr class="thin bg-grayLighter">
+            <div class = "grid">
+                <div class="row cells4" >
+                    <div class = "cell" ng-repeat = "x in databases  | filter:search" style = "padding:0; margin:0;">
+                         <div class="tile bg-grayLighter" data-role="tile" >
+                             <p></p>
+                                <p align="center"><a href="#/buyer2" ng-click = "selected(x)" align = "center">{{x.name}}</a></p>
+                                <p>{{x.info}}</p>
+
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+
+    <!--div class = "col-md-8">
+        <div class="panel-heading" style="background-color: silver" id = "inf">
+            <h3 class="panel-title"><b>Dataset Information </b></h3>
+        </div>
+        <br>
+        <div ng-if="selection" align="left">
+
+            <p><b>Dataset Name: </b>{{db_choice.name}}</p>
+            <p><b>Seller: </b>{{db_choice.seller}}</p>
+            <p><b>Description: </b>{{db_choice.info}}</p>
+            <p><b>Schema: </b>{{db_choice.schema}}</p>
+            <p><b>Dataset Price: </b> {{db_choice.price}}</p>
+
+        </div>
+        <div class="input-group" align = "center">
+                    <span class="input-group-btn">
+                        <a href = "buyer_2.html">
+                                <button class="btn btn-primary">
+                                    <span><a href="#/buyer2">Query this Dataset</a></span>
+                                        </button>
+                        </a>
+                    </span>
+        </div>
+    </div-->
+</div>

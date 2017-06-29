@@ -1,0 +1,54 @@
+
+    <br>
+    <br>
+    <div class = "row">
+        <div class = "container">
+            <div class="panel-heading" style="background-color: silver" id = "inf">
+                <h3 class="panel-title"><b>Dataset Information</b></h3>
+            </div>
+            <br>
+            <div align="left" id = "info" >
+                <p><b>Dataset Name: </b>{{choice.name}}</p>
+                <p><b>Seller: </b>{{choice.seller}}</p>
+                <p><b>Description: </b>{{choice.info}}</p>
+                <p><b>Schema: </b>{{choice.schema}}</p>
+                <table ng-repeat = "items in tables"ng-table="vm.tableParams" class="table" id = "table" style="max-width:150px;">
+                    <tr>
+                        <th ng-repeat="(key, val) in items[0]">{{key}}</th>
+                    </tr>
+                    <tr ng-repeat="item in items">
+                        <td style="font-size:12px" ng-repeat="(key, val) in item">{{val}}</td>
+                    </tr>
+                </table>
+
+
+                <p><b>Dataset Price: </b> {{choice.price}}</p>
+                <p><b>Budget Allocated($): <form><input type = "number" ng-model = "budget"></form></b></p>
+            </div>
+
+            <br>
+            <br>
+            <div class="input-group">
+                        <textarea class="form-control custom-control" rows="1" style="resize:none" id = "query" >
+
+                        </textarea>
+                <span class="input-group-btn">
+                                    <button class="btn btn-primary" ng-click="checkSQL('select * from test')">
+                                        <span>Purchase Query</span>
+                                    </button>
+                    <script type="text/javascript" charset="utf-8">
+                        function check() {
+                            console.log(
+                                    SQLParser.parse(document.getElementById("query")).toString()
+                            )
+                        }
+                    </script>
+                            </span>
+            </div>
+        </div>
+        <br>
+
+        <div class = "col-md-9" id = "chartt">
+        </div>
+    </div>
+
