@@ -1,7 +1,7 @@
 /**
  * Created by Yash Bidasaria on 5/23/2017.
  */
-var app = angular.module("app", ['ngRoute','ngTagsInput', 'ngTable'])
+var app = angular.module("app", ['ngRoute','ngTagsInput', 'ngTable', 'ngDropdowns','ngSanitize', 'ui.select'])
     .config(['$routeProvider', '$locationProvider',
         function($routeProvider, $locationProvider) {
             $routeProvider
@@ -61,11 +61,11 @@ app.controller("buyer1", ['$scope', '$rootScope', '$http', 'shared','$route', '$
         num: 0
     };
     $scope.tags = [
-        "Category 1",
-        "Category 2",
-        "Category 3",
-        "Category 4",
-        "Category 5"
+        ["Category 1", "mif-vpn-publ icon"],
+        ["Category 2", "mif-drive-eta icon"],
+        ["Category 3", "mif-cloud icon"],
+        ["Category 4", "mif-snowy3 icon"],
+        ["Category 5", "mif-meter icon"]
     ];
     $rootScope.databases = [
     ];
@@ -127,12 +127,6 @@ app.controller("buyer1", ['$scope', '$rootScope', '$http', 'shared','$route', '$
             call(i, db);
         }
     };
-
-
-
-
-
-
     $scope.search = "";
 
 }]);
@@ -145,24 +139,87 @@ app.controller("buyer2", ['$scope', '$rootScope', 'shared', '$routeParams', '$ht
         seller: "",
         datasets: {}
      };
-    $scope.t1 = $rootScope.tables;
-
-
-    $scope.checkSQL = function(query) {
-        console.log("HELLO");
-        console.log(query);
-        console.log(
-            SQLParser.parse(query).toString());
-
-    };
 
     $scope.choice = shared.getProp();
-    $scope.db = {};
 
+        $scope.ddSelectOptions = [
+            {
+                text: 'Query 1',
+                value: 'q1',
+                query: 'select state, count(*) from crash group by State',
+                htmltemplate: 'crashq1.html'
+            }, {
+                text: 'Query 2',
+                value: 'q2',
+                query: 'select count(*) from crash where State = \'Texas\' and Gender = \'Male\' and Alcohol_Results > 0.0',
+                htmltemplate: 'crashq2.html'
+            }, {
+                text: 'Query 3',
+                value: 'q3',
+                query: 'select sum(Fatalities_in_crash) from crash where State = \'California\' and Crash_Date >= date \'2011-01-01\' and Crash_Date < date \'2011-01-01\' + interval \'6\' month;',
+                htmltemplate: 'crashq3.html'
+            },
+            {
+                text: 'Query 4',
+                value: 'q4',
+                query: 'select count(Fatalities_in_crash) from crash where State = \'Wisconsin\' and Injury_Severity = \'Fatal Injury (K)\' and (Atmospheric_Condition = \'Snow\');',
+                htmltemplate: 'crashq4.html'
+            }
+        ];
 
+        $scope.ddSelectSelected = {
+            text: "Select Template",
+            query: ' ',
+            htmltemplate: ''
+        };
+        $scope.itemArray = [
+            {id: 1, name: 'first'},
+            {id: 2, name: 'second'},
+            {id: 3, name: 'third'},
+            {id: 4, name: 'fourth'},
+            {id: 5, name: 'fifth'},
+        ];
 
+        $scope.selected = { value: $scope.itemArray[0] };
+    $scope.loading = false;
+    $scope.confirm = false;
+    $scope.price = 0
+    $scope.getPurchasePrice = function(q) {
+        $scope.loading = true;
+        var str = ''
+        if(q.value == 'q2') {
+            str += '&state=' + $scope.selectedstate.value + '&gender=' + $scope.selectedgender.value + '&alchohol=' + $scope.selectedalchohol
+        }
+        $http({
+            method: "GET",
+            url: "http://127.0.0.1:8080/qirana/crash/?id=" + q.value + encodeURI(str)
+        }).then(function success(response){
+            console.log("price: " + response.data)
+            $scope.price = response.data
+        }).catch(function (response) {
+            console.log("pricing error occured: " + response.status)
+        }).finally(function (){
+            console.log("pricing finished");
+            $scope.loading = false;
+            $scope.confirm = true;
+        });
+    }
 
-}]);
+    $scope.confirmPurchase = function (s) {
+        if(s == 'OK') {
+
+        }
+        $scope.confirm = false;
+    }
+
+    $scope.states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'District of Columbia', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'];
+    $scope.gender = ['Male', 'Female']
+    $scope.selectedstate = {value : $scope.states[0]};
+    $scope.selectedgender = {value : $scope.gender[0]};
+    $scope.selectedalchohol = 0.0;
+    $scope.maxalchohol = 100;
+    $scope.minalchohol = 0.0;
+    }]);
 
 app.filter('filterByTags', function () {
     return function (items, tags, search) {
