@@ -71,3 +71,8 @@
         flex-basis: calc(100% - 52px);
     }
 }
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
