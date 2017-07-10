@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+
+<br>
+<br>
+<div class = "row">
+    <div class = "container">
+        <div class="panel-heading" style="background-color: silver" id = "inf">
+            <h3 class="panel-title"><b>Dataset Information</b></h3>
+        </div>
+        <br>
+        <div align="left" id = "info" >
+            <p><b>Dataset Name: </b> <input ng-model="choice.name"></p>
+            <p><b>Seller: </b><input ng-model="choice.seller"></p>
+            <p><b>Description: </b><input ng-model="choice.info"></p>
+            <p><b>Dataset Price: </b><input ng-model="choice.price"></p>
+        </div>
+        <button class="btn btn-primary" ng-click="change()">
+            <span>Reset Information</span>
+        </button>
+        <br>
+        <br>
+    </div>
+    <br>
+
+    <div class = "col-md-9" id = "chartt">
+    </div>
+</div>
+

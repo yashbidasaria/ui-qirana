@@ -183,13 +183,13 @@ app.controller("buyer2", ['$scope', '$rootScope', 'shared', '$routeParams', '$ht
         $scope.selected = { value: $scope.itemArray[0] };
     $scope.loading = false;
     $scope.confirm = false;
-    $scope.price = 0
+    $scope.price = 0;
     $scope.getPurchasePrice = function(q) {
         $scope.loading = true;
-        var str = ''
+        var str = '';
         if(q.value == 'q2') {
             str += '&state=' + $scope.selectedstate.value + '&gender=' + $scope.selectedgender.value + '&alchohol=' + $scope.selectedalchohol
-        }
+        };
         $http({
             method: "GET",
             url: "http://127.0.0.1:8080/qirana/crash/?id=" + q.value + encodeURI(str)
@@ -203,22 +203,30 @@ app.controller("buyer2", ['$scope', '$rootScope', 'shared', '$routeParams', '$ht
             $scope.loading = false;
             $scope.confirm = true;
         });
-    }
-
+    };
+    $rootScope.purchases = [];
     $scope.confirmPurchase = function (s) {
         if(s == 'OK') {
-
+            $rootScope.purchases.push($scope.price);
         }
         $scope.confirm = false;
-    }
+    };
 
     $scope.states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'District of Columbia', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'];
     $scope.gender = ['Male', 'Female']
     $scope.selectedstate = {value : $scope.states[0]};
     $scope.selectedgender = {value : $scope.gender[0]};
+    $scope.selecteddate = {value : new Date(2011, 1, 1)};
     $scope.selectedalchohol = 0.0;
+    $scope.selectedmonth = 0;
     $scope.maxalchohol = 100;
     $scope.minalchohol = 0.0;
+    $scope.atmos_con = ['Clear','Cloudy','Rain','Fog', 'Smog', 'Smoke','Snow','Blowing Snow','Sleet', 'Hail (Freezing Rain or Drizzle)', 'Not Reported', 'Blowing Sand, Soil, Dirt', 'Unknown', 'Severe Crosswinds', 'Other'];
+    $scope.severity = ['Non-incapacitating Evident Injury (B)','Fatal Injury (K)','No Injury (O)','Incapacitating Injury (A)','Possible Injury (C)','Injured, Severity Unknown', 'Unknown'];
+    $scope.selectedatmos = {value: $scope.atmos_con[0]};
+    $scope.selectedseverity = {value : $scope.severity[0]};
+
+
     }]);
 
 app.filter('filterByTags', function () {

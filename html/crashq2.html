@@ -1,4 +1,5 @@
-select count(*) from crash where State =
+<form name = "form">
+select sum(Fatalities_in_crash) from crash where State =
 <ui-select ng-model="selectedstate.value" style="display: inline-block">
     <ui-select-match style="max-width: 100px">
         <span ng-bind="selectedstate.value"></span>
@@ -15,4 +16,6 @@ select count(*) from crash where State =
         <span ng-bind="item"></span>
     </ui-select-choices>
 </ui-select> and Alcohol_Results >
-<input type="number" name="number" ng-model="selectedalchohol" ng-min="{{minalchohol}}"  ng-max="{{maxalchohol}}">
+<input type="number" name="number" ng-model="selectedalchohol" min="{{minalcohol}}"
+       max="{{maxalcohol}}">
+</form>
