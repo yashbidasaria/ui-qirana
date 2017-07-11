@@ -1,15 +1,25 @@
 <form name="form">
-<span>select count(*) from crash where State = </span>
-<ui-select ng-model="selectedstate.value" style="display: inline-block">
+<p>select <b>count(*)</b> from crash where,
+    State =
+    <select class="ui dropdown" ng-model="selectedstate.value" ng-options="x for x in states">
+
+    </select> and </p>
+
+    <!--ui-select ng-model="selectedstate.value" style="display: inline-block">
     <ui-select-match style="max-width: 100px">
         <span ng-bind="selectedstate.value"></span>
     </ui-select-match>
     <ui-select-choices repeat="item in (states | filter: $select.search)">
         <span ng-bind="item"></span>
     </ui-select-choices>
-</ui-select> and Crash Date =
+
+</ui-select-->
+    <div class = "ui input">
+   <p>   Crash Date =
 <input type="date" id="exampleInput" name="input" ng-model="selecteddate.value"
-           placeholder="yyyy-MM-dd" min="2011-01-01" max="2011-12-31" required style="display: inline-block;" />
-+ Interval =
-<input type="number" name="number" ng-model="selectedmonth"> months
+       placeholder="yyyy-MM-dd" min="2011-01-01" max="2011-12-31" required style="display: inline-block;" /></p> </div>
+    <div class = "ui input">
+<p> and Interval =
+    <input type="number" name="number" ng-model="selectedmonth"> months</p></div>
+
 </form>

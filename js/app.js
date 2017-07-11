@@ -229,46 +229,38 @@ app.controller("buyer2", ['$scope', '$rootScope', 'shared', '$routeParams', '$ht
 
     }]);
 
-app.filter('filterByTags', function () {
-    return function (items, tags, search) {
-        console.log("In the filter");
-        console.log(items.length + "  search = " + search);
-        var filtered = [];
-        var final_filtered = [];
-        items.forEach(function (item) {
-            var contains = false;
-            console.log(item.tags);
-            var con = 1;
-            for(var i = 0; i < tags.length; i++) {
-                console.log("Tag: " + tags[i].text);
-                var temp = tags[i];
-                if(item.tags.toLowerCase().indexOf(temp.text.toLowerCase()) >= 0) {
-                    console.log("contains");
-                    contains = true;
-                    con++;
+app.directive('soDropdown', ['$timeout', function($timeout) {
+    return {
+        restrict: 'E',
+        require: 'ngModel',
+        replace: true,
+        transclude: true,
+        template: function (el, atts) {
+            var itemName = 'dropdownItem';
+            var valueField = itemName + '.' + (atts.valueField || 'id');
+            var textField = itemName + '.' + (atts.textField || 'name');
+            return "<select class='ui search dropdown'>" +
+                "<div ng-transclude></div>" +
+                "   <option value='{{" + valueField + "}}' ng-repeat='" + itemName + " in " + atts.dropdownItems + " track by " + valueField + "'>" +
+                "       {{" + textField + "}}" +
+                "   </option>" +
+                "</select>";
+        },
+        link: function (scope, el, atts, ngModel) {
+            $(el).dropdown({
+                onChange: function (value, text, choice) {
+                    scope.$apply(function () {
+                        ngModel.$setViewValue(value);
+                    });
                 }
-                else {
-                    contains = false;
-                    break;
-                }
-            }
-            if(contains ) {
-                filtered.push(item);
-                var x = tags.length;
-                if (item.name.toLowerCase().includes(search.toLowerCase())) {
-                    final_filtered.push(item);
-                }
-            }
-            var contains2 = false;
-            if(tags.length == 0) {
-                if (item.name.toLowerCase().includes(search.toLowerCase())) {
-                    contains2 = true;
-                    final_filtered.push(item);
-                }
-            }
-
-        });
-        return final_filtered;
+            });
+            ngModel.$render = function () {
+                console.log('set value', el, ngModel, ngModel.$viewValue);
+                $timeout(function () {
+                    $(el).dropdown('set value', ngModel.$viewValue);
+                });
+                //$(el).dropdown('set value', ngModel.$viewValue);
+            };
+        }
     };
-});
-
+}]);

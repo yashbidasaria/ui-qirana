@@ -1,27 +1,34 @@
 <form name="form">
-    <span>select count(Fatalities_in_crash) from crash where State = </span>
-    <ui-select ng-model="selectedstate.value" style="display: inline-block">
+    <span><p>select <b>count(Fatalities_in_crash)</b> from crash where State = </span>
+    <!--ui-select ng-model="selectedstate.value" style="display: inline-block">
         <ui-select-match style="max-width: 100px">
             <span ng-bind="selectedstate.value"></span>
         </ui-select-match>
         <ui-select-choices repeat="item in (states | filter: $select.search)">
             <span ng-bind="item"></span>
         </ui-select-choices>
-    </ui-select> and Injury_Severity =
-    <ui-select ng-model="selectedseverity.value" style="display: inline-block">
+    </ui-select-->
+    <select  class="ui dropdown"  ng-model="selectedstate.value" ng-options="x for x in states">
+    </select> and </p> <p>Injury_Severity =
+    <select  class="ui dropdown"  ng-model="selectedseverity.value" ng-options="x for x in severity">
+    </select>
+    <!--ui-select ng-model="selectedseverity.value" style="display: inline-block">
         <ui-select-match style="max-width: 100px">
             <span ng-bind="selectedseverity.value"></span>
         </ui-select-match>
         <ui-select-choices repeat="item in (severity | filter: $select.search)">
             <span ng-bind="item"></span>
         </ui-select-choices>
-    </ui-select> and Atmospheric_Condition =
-    <ui-select ng-model="selectedatmos.value" style="display: inline-block">
+    </ui-select--> and </p> <p>Atmospheric_Condition =
+    <select  class="ui dropdown"  ng-model="selectedatmos.value" ng-options="x for x in atmos_con">
+    </select></p>
+
+    <!--ui-select ng-model="selectedatmos.value" style="display: inline-block">
         <ui-select-match style="max-width: 100px">
             <span ng-bind="selectedatmos.value"></span>
         </ui-select-match>
         <ui-select-choices repeat="item in (atmos_con | filter: $select.search)">
             <span ng-bind="item"></span>
         </ui-select-choices>
-    </ui-select>
+    </ui-select-->
 </form>

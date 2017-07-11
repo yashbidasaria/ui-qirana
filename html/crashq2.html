@@ -1,21 +1,29 @@
+<div style="display: inline-block;">
 <form name = "form">
-select sum(Fatalities_in_crash) from crash where State =
-<ui-select ng-model="selectedstate.value" style="display: inline-block">
+    <p>select <b>sum(Fatalities_in_crash)</b> from crash where State =
+<!--ui-select ng-model="selectedstate.value" style="display: inline-block">
     <ui-select-match style="max-width: 100px">
         <span ng-bind="selectedstate.value"></span>
     </ui-select-match>
     <ui-select-choices repeat="item in (states | filter: $select.search)">
         <span ng-bind="item"></span>
     </ui-select-choices>
-</ui-select> and Gender =
-<ui-select ng-model="selectedgender.value" style="display: inline-block;">
+</ui-select-->
+    <select  class="ui dropdown"  ng-model="selectedstate.value" ng-options="x for x in states">
+    </select>
+       and </p><div class = "ui input"><p>Gender =
+    <select  class="ui dropdown" ng-model="selectedgender.value" ng-options="x for x in gender">
+    </select>
+<!--ui-select ng-model="selectedgender.value" style="display: inline-block;">
     <ui-select-match>
         <span  style="max-width: 100px" ng-bind="selectedgender.value"></span>
     </ui-select-match>
     <ui-select-choices repeat="item in (gender | filter: $select.search)">
         <span ng-bind="item"></span>
     </ui-select-choices>
-</ui-select> and Alcohol_Results >
-<input type="number" name="number" ng-model="selectedalchohol" min="{{minalcohol}}"
-       max="{{maxalcohol}}">
+</ui-select--> and Alcohol_Results >
+
+<input type="number" name="number" ng-model="selectedalchohol" min="0"
+       max="100"></p></div>
 </form>
+</div>
