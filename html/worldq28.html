@@ -1,0 +1,22 @@
+<style>
+    p { margin:0 }
+</style>
+
+<form name="form" style="font-family: Consolas;">
+
+    <p style="color:dodgerblue;">SELECT </p>
+    <p>&emsp;Name</p>
+    <p><span style="color:dodgerblue;">FROM</span> Country,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;CountryLanguage</p>
+    <p><span style="color:dodgerblue;"> WHERE</span> Code =
+        <select class="ui dropdown" ng-model="selectedCountryCode.value" ng-options="x for x in countrycode">
+        </select>
+    </p>
+    <p> <span style="color:dodgerblue;">AND</span> Language =
+        <select class="ui dropdown" ng-model="selectedLang.value" ng-options="x for x in languages">
+        </select>
+    </p>
+
+
+
+</form>

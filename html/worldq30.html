@@ -1,0 +1,18 @@
+<style>
+    p { margin:0 }
+</style>
+
+<form name="form" style="font-family: Consolas;">
+
+    <p style="color:dodgerblue;">SELECT </p>
+    <p>&emsp;T.district</p>
+    <p><span style="color:dodgerblue;">FROM</span> Country C,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;City T</p>
+    <p><span style="color:dodgerblue;"> WHERE</span> C.Code =
+        <select class="ui dropdown" ng-model="selectedCode.value" ng-options="x for x in code">
+
+        </select>
+    </p>
+    <p> <span style="color:dodgerblue;">AND</span> C.capital = T.id </p>
+
+</form>

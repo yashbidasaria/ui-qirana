@@ -1,0 +1,45 @@
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
+
+    <span ng-show="form.b1.$error.max || form.b1.$error.min || form.b2.$error.max || form.b2.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> d_year must be between 1992 and 1997
+        </div>
+    </span>
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;c_nation,</p>
+    <p>&emsp;s_nation,</p>
+    <p>&emsp;d_year,</p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(lo_revenue) <span style="color:dodgerblue;">AS</span> revenue</p>
+    <p><span style="color:dodgerblue;">FROM</span> customer, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;lineorder, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;supplier, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;date</p>
+    <p><span style="color:dodgerblue;"> WHERE</span> lo_custkey = c_custkey</p>
+    <p><span style="color:dodgerblue;"> AND</span> lo_suppkey = s_suppkey</p>
+    <p><span style="color:dodgerblue;"> AND</span> lo_orderdate = d_datekey</p>
+    <p><span style="color:dodgerblue;"> AND</span> c_region =
+        <select class="ui dropdown" ng-model="selectedc_region.value" ng-options="x for x in c_region">
+        </select>
+    </p>
+    <p><span style="color:dodgerblue;"> AND</span> s_region =
+        <select class="ui dropdown" ng-model="selecteds_region.value" ng-options="x for x in s_region">
+        </select>
+    </p>
+    <div class = "ui input" style="display: inline-block;">
+        <span style="color:dodgerblue;">AND</span> d_year >=
+        <input type="number" name="b1" ng-model="selected_dyear1" min = "1992" max = "1997">
+        <span style="color:dodgerblue;">AND </span> d_year <=
+        <input type="number" name="b2" ng-model="selected_dyear2" min = "1992" max = "1997">
+    </div>
+
+    <p><span style="color:dodgerblue;"> GROUP BY</span> c_nation, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;s_nation, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;d_year </p>
+
+
+
+</form>

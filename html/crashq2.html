@@ -1,29 +1,26 @@
-<div style="display: inline-block;">
-<form name = "form">
-    <p>select <b>sum(Fatalities_in_crash)</b> from crash where State =
-<!--ui-select ng-model="selectedstate.value" style="display: inline-block">
-    <ui-select-match style="max-width: 100px">
-        <span ng-bind="selectedstate.value"></span>
-    </ui-select-match>
-    <ui-select-choices repeat="item in (states | filter: $select.search)">
-        <span ng-bind="item"></span>
-    </ui-select-choices>
-</ui-select-->
-    <select  class="ui dropdown"  ng-model="selectedstate.value" ng-options="x for x in states">
-    </select>
-       and </p><div class = "ui input"><p>Gender =
-    <select  class="ui dropdown" ng-model="selectedgender.value" ng-options="x for x in gender">
-    </select>
-<!--ui-select ng-model="selectedgender.value" style="display: inline-block;">
-    <ui-select-match>
-        <span  style="max-width: 100px" ng-bind="selectedgender.value"></span>
-    </ui-select-match>
-    <ui-select-choices repeat="item in (gender | filter: $select.search)">
-        <span ng-bind="item"></span>
-    </ui-select-choices>
-</ui-select--> and Alcohol_Results >
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
 
-<input type="number" name="number" ng-model="selectedalchohol" min="0"
-       max="100"></p></div>
+    <p style="color:dodgerblue;">SELECT</p>
+    <p> &emsp; <span style="color:hotpink;">COUNT</span>(*)</p>
+    <p><span style="color:dodgerblue;">FROM</span> crash</p>
+    <p><span style="color:dodgerblue;">WHERE</span> State =
+        <select class="ui dropdown" ng-model="selectedstate.value" ng-options="x for x in states">
+        </select>
+    </p>
+
+    <div class = "ui input">
+        <p><span style="color:dodgerblue;">AND</span> Crash Date =
+            <input type="date" id="exampleInput" name="input" ng-model="selecteddate.value"
+               placeholder="yyyy-MM-dd" min="2011-01-01" max="2011-12-31" required style="display: inline-block;" />
+        </p>
+    </div>
+    <div class = "ui input" style="display: inline-block;">
+         <span style="color:dodgerblue;">AND</span> Interval =
+            <input type="number" name="number" ng-model="selectedmonth"> months
+
+    </div>
+
 </form>
-</div>

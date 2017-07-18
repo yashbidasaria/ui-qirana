@@ -1,0 +1,22 @@
+<style>
+    p { margin:0 }
+</style>
+
+<form name="form" style="font-family: Consolas;">
+    <span ng-show="form.number.$error.max || form.number.$error.min">
+                        <div class="alert alert-danger" role="alert">
+                          <strong>Error</strong> Population needs to be between 0 and 1277558000
+                        </div></span>
+
+    <p style="color:dodgerblue;">SELECT DISTINCT </p>
+    <p>&emsp;1</p>
+    <p><span style="color:dodgerblue;">FROM</span> City </p>
+    <p><span style="color:dodgerblue;"> WHERE</span> CountryCode =
+        <select class="ui dropdown" ng-model="selectedCountryCode.value" ng-options="x for x in countrycode">
+        </select>
+    </p>
+    <div class = "ui input" style="display: inline-block;">
+        <span style="color:dodgerblue;">WHERE</span> Population >=
+        <input type="number" name="number" ng-model="selectedPop" min = "0" max = "1277558000">
+    </div>
+</form>

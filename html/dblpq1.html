@@ -1,0 +1,18 @@
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
+    <span ng-show="form.number.$error.max || form.number.$error.min">
+                        <div class="alert alert-danger" role="alert">
+                          <strong>Error</strong> FromNodeId needs to be between 0 and 425875
+                        </div></span>
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;<span style="color:hotpink;">COUNT</span>(*)</p>
+    <p><span style="color:dodgerblue;">FROM</span> dblp</p>
+    <div class = "ui input" style="display: inline-block;">
+        <span style="color:dodgerblue;">WHERE</span> FromNodeId >
+        <input type="number" name="number" ng-model="selectedFromNode" min="0" max = "425875">
+    </div>
+
+</form>

@@ -1,0 +1,15 @@
+<style>
+    p { margin:0 }
+</style>
+
+<form name="form" style="font-family: Consolas;">
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;Name</p>
+    <p><span style="color:dodgerblue;">FROM</span> Country</p>
+    <p><span style="color:dodgerblue;">WHERE</span> Region =
+    <select class="ui dropdown" ng-model="selectedRegion.value" ng-options="x for x in regions">
+
+    </select></p>
+
+
+</form>

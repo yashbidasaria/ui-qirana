@@ -1,0 +1,16 @@
+<style>
+    p { margin:0 }
+</style>
+
+<form name="form" style="font-family: Consolas;">
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;*</p>
+    <p><span style="color:dodgerblue;">FROM</span> CountryLanguage</p>
+    <span style="color:dodgerblue;">WHERE</span> IsOfficial =
+        <select class="ui dropdown" ng-model="selectedOfficial.value" ng-options="x for x in official">
+
+        </select></p>
+
+
+</form>

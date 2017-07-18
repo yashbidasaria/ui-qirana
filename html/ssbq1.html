@@ -1,0 +1,44 @@
+<style>
+    p { margin:0 }
+</style>
+
+<form name="form" style="font-family: Consolas;">
+
+    <span ng-show="form.number.$error.max || form.number.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> d_year must be between 1992 and 1997
+        </div>
+    </span>
+
+    <span ng-show="form.d1.$error.max || form.d1.$error.min
+    || form.d2.$error.max || form.d2.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> lo_discount must be between 0 and 100
+        </div>
+    </span>
+
+    <span ng-show="form.q1.$error.max || form.q1.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> lo_quantity must be between 0 and 50
+        </div>
+    </span>
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(lo_extendedprice * lo_discount) <span style="color:dodgerblue;">AS</span> revenue</p>
+    <p><span style="color:dodgerblue;">FROM</span> lineorder, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;date </p>
+    <p><span style="color:dodgerblue;"> WHERE</span> lo_orderdate = d_datekey</p>
+
+    <div class = "ui input" style="display: inline-block;"> <span style="color:dodgerblue;">AND</span> d_year =
+        <input type="number" name="number" ng-model="selectedd_year" min = "1992" max = "1997" required><br><br>
+        <span style="color:dodgerblue;">AND </span> lo_discount <span style="color:dodgerblue;">BETWEEN</span>
+        <input type="number" name="d1" ng-model="selectedlo_discount1" min = "0" max = "100" required>
+        <span style="color:dodgerblue;">AND</span>
+        <input type="number" name="d2" ng-model="selectedlo_discount2" min = "0" max = "100">
+        <br><br>
+        <span style="color:dodgerblue;">AND</span> lo_quantity <
+        <input type="number" name="q1" ng-model="selectedlo_quantity1" min = "0" max = "50">
+
+    </div>
+
+</form>

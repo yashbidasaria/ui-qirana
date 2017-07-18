@@ -1,0 +1,15 @@
+<style>
+    p { margin:0 }
+</style>
+
+<form name="form" style="font-family: Consolas;">
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;Language,</p>
+    <p>&emsp;<span style="color:hotpink;">COUNT</span>(CountryCode = <select class="ui dropdown" ng-model="selectedCountryCode.value" ng-options="x for x in countrycode">
+
+    </select>)</p>
+    <p><span style="color:dodgerblue;">FROM</span> CountryLanguage </p>
+    <p><span style="color:dodgerblue;">GROUP BY</span> Language</p>
+
+</form>

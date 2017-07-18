@@ -1,0 +1,33 @@
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(lo_revenue)</p>
+    <p>&emsp;d_year,</p>
+    <p>&emsp;p_brand1</p>
+    <p><span style="color:dodgerblue;">FROM</span> lineorder, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;date, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;part, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;supplier</p>
+    <p><span style="color:dodgerblue;"> WHERE</span> lo_orderdate = d_datekey</p>
+    <p><span style="color:dodgerblue;"> AND</span> lo_partkey = p_partkey</p>
+    <p><span style="color:dodgerblue;"> AND</span> lo_suppkey = s_suppkey</p>
+
+    <p><span style="color:dodgerblue;"> AND</span> p_category =
+        <select class="ui dropdown" ng-model="selectedp_category.value" ng-options="x for x in p_category">
+
+        </select>
+    </p>
+    <p><span style="color:dodgerblue;"> AND</span> s_region =
+        <select class="ui dropdown" ng-model="selecteds_region.value" ng-options="x for x in s_region">
+
+        </select>
+    </p>
+    <p><span style="color:dodgerblue;"> GROUP BY</span> d_year, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;p_brand1 </p>
+    <p><span style="color:dodgerblue;"> ORDER BY</span> d_year, p_brand1</p>
+
+
+</form>

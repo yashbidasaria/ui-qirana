@@ -1,0 +1,27 @@
+<style>
+    p { margin:0 }
+</style>
+
+
+<form name="form" style="font-family: Consolas;">
+    <span ng-show="form.number.$error.max || form.number.$error.min">
+                        <div class="alert alert-danger" role="alert">
+                          <strong>Error</strong> Population needs to be between 0 and 100
+                        </div></span>
+
+    <p style="color:dodgerblue;">SELECT </p> <p>&emsp;C.Name</p> <p><span style="color:dodgerblue;"> FROM</span> Country C,</p><p>
+    &emsp;&emsp;&emsp;&emsp;&emsp;CountryLanguage L</p>
+    <p> <span style="color:dodgerblue;"> WHERE</span> C.Code = L.CountryCode
+        </p>
+    <p> <span style="color:dodgerblue;"> AND</span> L.Language =
+        <select class="ui dropdown" ng-model="selectedLang.value" ng-options="x for x in languages">
+
+        </select></p>
+
+
+    <div class = "ui input" style="display: inline-block;">
+        <span style="color:dodgerblue;"> AND</span> L.Percentage >=
+        <input type="number" name="number" ng-model="selectedPer" min = "0" max = "100"> </div>
+
+
+</form>

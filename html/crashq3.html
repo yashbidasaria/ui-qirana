@@ -1,25 +1,31 @@
-<form name="form">
-<p>select <b>count(*)</b> from crash where,
-    State =
-    <select class="ui dropdown" ng-model="selectedstate.value" ng-options="x for x in states">
+<style>
+    p { margin:0 }
+</style>
+<form name = "form" style="font-family: Consolas;">
 
-    </select> and </p>
+    <span ng-show="form.number.$error.max || form.number.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> Alcohol Results need to be between 0 and 100
+        </div>
+    </span>
 
-    <!--ui-select ng-model="selectedstate.value" style="display: inline-block">
-    <ui-select-match style="max-width: 100px">
-        <span ng-bind="selectedstate.value"></span>
-    </ui-select-match>
-    <ui-select-choices repeat="item in (states | filter: $select.search)">
-        <span ng-bind="item"></span>
-    </ui-select-choices>
-
-</ui-select-->
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(Fatalities_in_crash)</p>
+    <p><span style="color:dodgerblue;">WHERE</span> State =
+        <select  class="ui dropdown"  ng-model="selectedstate.value" ng-options="x for x in states">
+        </select>
+    </p>
+    <p><span style="color:dodgerblue;">AND</span> Gender =
+        <select  class="ui dropdown" ng-model="selectedgender.value" ng-options="x for x in gender">
+        </select>
+    </p>
     <div class = "ui input">
-   <p>   Crash Date =
-<input type="date" id="exampleInput" name="input" ng-model="selecteddate.value"
-       placeholder="yyyy-MM-dd" min="2011-01-01" max="2011-12-31" required style="display: inline-block;" /></p> </div>
-    <div class = "ui input">
-<p> and Interval =
-    <input type="number" name="number" ng-model="selectedmonth"> months</p></div>
-
+        <p><span style="color:dodgerblue;">AND</span> Alcohol_Results >
+        <input type="number" name="number" ng-model="selectedalchohol" min="0"
+               max="100" required>
+        </p>
+    </div>
 </form>
+
+
+

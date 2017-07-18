@@ -1,0 +1,57 @@
+<style>
+    p { margin:0 }
+</style>
+
+
+<form name="form" style="font-family: Consolas;">
+
+     <span ng-show="form.b1.$error.max || form.b1.$error.min || form.b2.$error.max || form.b2.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> d_year must be between 1992 and 1997
+        </div>
+    </span>
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;d_year,</p>
+    <p>&emsp;s_city,</p>
+    <p>&emsp;p_brand1,</p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(lo_revenue - lo_supplycost) <span style="color:dodgerblue;">AS</span> profit</p>
+    <p><span style="color:dodgerblue;">FROM</span> date, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;customer, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;supplier, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;part,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;lineorder</p>
+    <p><span style="color:dodgerblue;"> WHERE</span> lo_custkey = c_custkey</p>
+    <p><span style="color:dodgerblue;"> AND</span> lo_suppkey = s_suppkey</p>
+    <p><span style="color:dodgerblue;"> AND</span> lo_partkey = p_partkey</p>
+    <p><span style="color:dodgerblue;"> AND</span> lo_orderdate = d_datekey</p>
+    <p><span style="color:dodgerblue;"> AND</span> c_region =
+        <select class="ui dropdown" ng-model="selectedc_region.value" ng-options="x for x in c_region">
+        </select>
+
+    </p>
+    <p><span style="color:dodgerblue;"> AND</span> <s></s>s_nation =
+        <select class="ui dropdown" ng-model="selecteds_nation.value" ng-options="x for x in s_nation">
+        </select>
+    </p>
+    <div class = "ui input" style="display: inline-block;">
+        <span style="color:dodgerblue;">AND</span> d_year =
+        <input type="number" name="b1" ng-model="selected_dyear1" min = "1992" max = "1997">
+        <span style="color:dodgerblue;">OR </span> d_year =
+        <input type="number" name="b2" ng-model="selected_dyear2" min = "1992" max = "1997">
+    </div>
+    <p><span style="color:dodgerblue;"> AND</span> <s></s>p_category =
+        <select class="ui dropdown" ng-model="selectedp_cateogory.value" ng-options="x for x in p_category">
+        </select>
+    </p>
+
+    <p><span style="color:dodgerblue;"> GROUP BY</span> d_year, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;s_city </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;p_brand1 </p>
+
+
+    <p><span style="color:dodgerblue;"> ORDER BY</span> d_year, s_city, p_brand1</p>
+
+
+
+</form>

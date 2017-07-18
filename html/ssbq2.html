@@ -1,0 +1,40 @@
+<style>
+    p { margin:0 }
+</style>
+
+<form name="form" style="font-family: Consolas;">
+
+    <span ng-show="form.a2.$error.max || form.a2.$error.min || form.a3.$error.max || form.a3.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> lo_discount must be between 0 and 100
+        </div>
+    </span>
+
+    <span ng-show="form.a4.$error.max || form.a4.$error.min || form.a5.$error.max || form.a5.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> lo_quantity must be between 0 and 50
+        </div>
+    </span>
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(lo_extendedprice * lo_discount) <span style="color:dodgerblue;">AS</span> revenue</p>
+    <p><span style="color:dodgerblue;">FROM</span> lineorder, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;date </p>
+    <p><span style="color:dodgerblue;"> WHERE</span> lo_orderdate = d_datekey</p>
+    <p><span style="color:dodgerblue;"> AND</span> d_yearmonthnum =
+        <select class="ui dropdown" ng-model="selectedd_yearmonthnum.value" ng-options="x for x in d_yearmonthnum">
+        </select>
+    </p>
+    <div class = "ui input" style="display: inline-block;">
+        <input type="number" name="a2" ng-model="selectedlo_discount1" min = "0" max = "100">
+        <span style="color:dodgerblue;">AND</span>
+        <input type="number" name="a3" ng-model="selectedlo_discount2" min = "0" max = "100">
+        <br><br>
+        <span style="color:dodgerblue;">AND</span> lo_quantity <span style="color:dodgerblue;">BETWEEN</span>
+        <input type="number" name="a4" ng-model="selectedlo_quantity1" min = "0" max = "50">
+        <span style="color:dodgerblue;">AND</span>
+        <input type="number" name="a5" ng-model="selectedlo_quantity2" min = "0" max = "50">
+
+    </div>
+
+</form>
