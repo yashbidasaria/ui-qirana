@@ -242,34 +242,34 @@ app.controller("buyer2", ['$scope', '$rootScope', 'shared', '$routeParams', '$ht
             str += '&name=' + $scope.selectedLetter.value
         };
         if(q.value == 'q11') {
-            str += '&continent=' + $scope.selectedCon.value + '&population' + $scope.selectedPop
+            str += '&continent=' + $scope.selectedCon.value + '&population=' + $scope.selectedPop.value
         };
         if(q.value == 'q12' || q.value == 'q13') {
             str += '&region=' + $scope.selectedRegion.value
         };
         if(q.value == 'q14') {
-            str += '&population=' + $scope.selectedmaxPop + '&population' + $scope.selectedminPop
+            str += '&population1=' + $scope.selectedminPop.value + '&population2=' + $scope.selectedmaxPop.value
         };
         if(q.value == 'q16') {
             str += '&code=' + $scope.selectedCode.value
         };
         if(q.value == 'q19') {
-            str += '&population=' + $scope.selectedPop + '&countrycode' + $scope.selectedCountryCode.value
+            str += '&population=' + $scope.selectedPop.value + '&countrycode=' + $scope.selectedCountryCode.value
         };
         if(q.value == 'q20' || q.value == 'q22' || q.value == 'q23' || q.value == 'q26') {
-            str += '&countrycode' + $scope.selectedCountryCode.value
+            str += '&countrycode=' + $scope.selectedCountryCode.value
         };
         if(q.value == 'q21') {
-            str += '&isofficial' + $scope.selectedOfficial.value
+            str += '&isofficial=' + $scope.selectedOfficial.value
         };
         if(q.value == 'q27') {
-            str += '&countrycode' + $scope.selectedCountryCode.value + '&population=' + $scope.selectedPop
+            str += '&countrycode=' + $scope.selectedCountryCode.value + '&population=' + $scope.selectedPop.value
         };
         if(q.value == 'q28') {
-            str += '&countrycode' + $scope.selectedCountryCode.value + '&language=' + $scope.selectedLang.value
+            str += '&language=' + $scope.selectedLang.value
         };
         if(q.value == 'q29') {
-            str += '&language=' + $scope.selectedLang.value + '&percentage' + $scope.selectedPer
+            str += '&language=' + $scope.selectedLang.value + '&percentage=' + $scope.selectedPer.value
         };
         if(q.value == 'q31') {
             str += '&language=' + $scope.selectedLang.value
@@ -418,13 +418,13 @@ app.controller("buyer2", ['$scope', '$rootScope', 'shared', '$routeParams', '$ht
     $scope.selectedCon = {value : $scope.continents[0]};
     $scope.letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z']
     $scope.selectedLetter = {value: $scope.letters[0]};
-    $scope.selectedPop = 0;
+    $scope.selectedPop = {value:0};
     $scope.maxPop = 1277558000;
     $scope.minPop = 0;
     $scope.regions = ['Caribbean','Southern and Central Asia','Central Africa','Southern Europe','Middle East','South America','Polynesia', 'Antarctica', 'Australia and New Zealand','Western Europe','Eastern Africa', 'Western Africa', 'Eastern Europe','Central America','North America','Southeast Asia','Southern Africa','Eastern Asia','Nordic Countries','Northern Africa','Baltic Countries','Melanesia','Micronesia','British Islands','Micronesia/Caribbean'];
     $scope.selectedRegion = {value: $scope.regions[0]};
-    $scope.selectedminPop = 0;
-    $scope.selectedmaxPop = $scope.maxPop;
+    $scope.selectedminPop = {value:0};
+    $scope.selectedmaxPop = {value:$scope.maxPop};
     $scope.code = ['ABW','AFG','AGO','AIA','ALB','AND','ANT','ARE','ARG','ARM','ASM','ATA','ATF','ATG','AUS','AUT','AZE','BDI','BEL','BEN','BFA','BGD','BGR','BHR','BHS','BIH','BLR','BLZ','BMU','BOL','BRA','BRB','BRN','BTN','BVT','BWA','CAF','CAN','CCK','CHE','CHL','CHN','CIV','CMR','COD','COG','COK','COL','COM','CPV','CRI','CUB','CXR','CYM','CYP','CZE','DEU','DJI','DMA','DNK','DOM','DZA','ECU','EGY','ERI','ESH','ESP','EST','ETH','FIN','FJI','FLK','FRA','FRO','FSM','GAB','GBR','GEO','GHA','GIB','GIN','GLP','GMB','GNB','GNQ','GRC','GRD','GRL','GTM','GUF','GUM','GUY','HKG','HMD','HND','HRV','HTI','HUN','IDN','IND','IOT','IRL','IRN','IRQ','ISL','ISR','ITA','JAM','JOR','JPN','KAZ','KEN','KGZ','KHM','KIR','KNA','KOR','KWT','LAO','LBN','LBR','LBY','LCA','LIE','LKA','LSO','LTU','LUX','LVA','MAC','MAR','MCO','MDA','MDG','MDV','MEX','MHL','MKD','MLI','MLT','MMR','MNG','MNP','MOZ','MRT','MSR','MTQ','MUS','MWI','MYS','MYT','NAM','NCL','NER','NFK','NGA','NIC','NIU','NLD','NOR','NPL','NRU','NZL','OMN','PAK','PAN','PCN','PER','PHL','PLW','PNG','POL','PRI','PRK','PRT','PRY','PSE','PYF','QAT','REU','ROM','RUS','RWA','SAU','SDN','SEN','SGP','SGS','SHN','SJM','SLB','SLE','SLV','SMR','SOM','SPM','STP','SUR','SVK','SVN','SWE','SWZ','SYC','SYR','TCA','TCD','TGO','THA','TJK','TKL','TKM','TMP','TON','TTO','TUN','TUR','TUV','TWN','TZA','UGA','UKR','UMI','URY','USA','UZB','VAT','VCT','VEN','VGB','VIR','VNM','VUT','WLF','WSM','YEM','YUG','ZAF','ZMB','ZWE'];
     $scope.selectedCode = {value: $scope.code[0]};
     $scope.countrycode = ['ABW','AFG','AGO','AIA','ALB','AND','ANT','ARE','ARG','ARM','ASM','ATA','ATF','ATG','AUS','AUT','AZE','BDI','BEL','BEN','BFA','BGD','BGR','BHR','BHS','BIH','BLR','BLZ','BMU','BOL','BRA','BRB','BRN','BTN','BVT','BWA','CAF','CAN','CCK','CHE','CHL','CHN','CIV','CMR','COD','COG','COK','COL','COM','CPV','CRI','CUB','CXR','CYM','CYP','CZE','DEU','DJI','DMA','DNK','DOM','DZA','ECU','EGY','ERI','ESH','ESP','EST','ETH','FIN','FJI','FLK','FRA','FRO','FSM','GAB','GBR','GEO','GHA','GIB','GIN','GLP','GMB','GNB','GNQ','GRC','GRD','GRL','GTM','GUF','GUM','GUY','HKG','HMD','HND','HRV','HTI','HUN','IDN','IND','IOT','IRL','IRN','IRQ','ISL','ISR','ITA','JAM','JOR','JPN','KAZ','KEN','KGZ','KHM','KIR','KNA','KOR','KWT','LAO','LBN','LBR','LBY','LCA','LIE','LKA','LSO','LTU','LUX','LVA','MAC','MAR','MCO','MDA','MDG','MDV','MEX','MHL','MKD','MLI','MLT','MMR','MNG','MNP','MOZ','MRT','MSR','MTQ','MUS','MWI','MYS','MYT','NAM','NCL','NER','NFK','NGA','NIC','NIU','NLD','NOR','NPL','NRU','NZL','OMN','PAK','PAN','PCN','PER','PHL','PLW','PNG','POL','PRI','PRK','PRT','PRY','PSE','PYF','QAT','REU','ROM','RUS','RWA','SAU','SDN','SEN','SGP','SGS','SHN','SJM','SLB','SLE','SLV','SMR','SOM','SPM','STP','SUR','SVK','SVN','SWE','SWZ','SYC','SYR','TCA','TCD','TGO','THA','TJK','TKL','TKM','TMP','TON','TTO','TUN','TUR','TUV','TWN','TZA','UGA','UKR','UMI','URY','USA','UZB','VAT','VCT','VEN','VGB','VIR','VNM','VUT','WLF','WSM','YEM','YUG','ZAF','ZMB','ZWE'];
@@ -433,7 +433,7 @@ app.controller("buyer2", ['$scope', '$rootScope', 'shared', '$routeParams', '$ht
     $scope.selectedOfficial = {value: $scope.official[0]};
     $scope.languages = ['Dutch','English','Papiamento','Spanish','Balochi','Dari','Pashto','Turkmenian','Uzbek','Ambo','Chokwe','Kongo','Luchazi','Luimbe-nganguela','Luvale','Mbundu','Nyaneka-nkhumbi','Ovimbundu','Albaniana','Greek','Macedonian','Catalan','French','Portuguese','Arabic','Hindi','Indian Languages','Italian','Armenian','Azerbaijani','Samoan','Tongan','Creole English','Canton Chinese','German','Serbo-Croatian','Vietnamese','Czech','Hungarian','Polish','Romanian','Slovene','Turkish','Lezgian','Russian','Kirundi','Swahili','Adja','Aizo','Bariba','Fon','Ful','Joruba','Somba','Busansi','Dagara','Dyula','Gurma','Mossi','Bengali','Chakma','Garo','Khasi','Marma','Santhali','Tripuri','Bulgariana','Romani','Creole French','Belorussian','Ukrainian','Garifuna','Maya Languages','Aimará','Guaraní','Ketšua','Japanese','Bajan','Chinese','Malay','Malay-English','Asami','Dzongkha','Nepali','Khoekhoe','Ndebele','San','Shona','Tswana','Banda','Gbaya','Mandjia','Mbum','Ngbaka','Sara','Eskimo Languages','Punjabi','Romansh','Araucan','Rapa nui','Dong','Hui','Mantšu','Miao','Mongolian','Puyi','Tibetan','Tujia','Uighur','Yi','Zhuang','Akan','Gur','Kru','Malinke','[South]Mande','Bamileke-bamum','Duala','Fang','Maka','Mandara','Masana','Tikar','Boa','Luba','Mongo','Ngala and Bangi','Rundi','Rwanda','Teke','Zande','Mbete','Mboshi','Punu','Sango','Maori','Arawakan','Caribbean','Chibcha','Comorian','Comorian-Arabic','Comorian-French','Comorian-madagassi','Comorian-Swahili','Crioulo','Moravian','Silesiana','Slovak','Southern Slavic Languages','Afar','Somali','Danish','Norwegian','Swedish','Berberi','Sinaberberi','Bilin','Hadareb','Saho','Tigre','Tigrinja','Basque','Galecian','Estonian','Finnish','Amhara','Gurage','Oromo','Sidamo','Walaita','Saame','Fijian','Faroese','Kosrean','Mortlock','Pohnpei','Trukese','Wolea','Yap','Mpongwe','Punu-sira-nzebi','Gaeli','Kymri','Abhyasi','Georgiana','Osseetti','Ewe','Ga-adangme','Kissi','Kpelle','Loma','Susu','Yalunka','Diola','Soninke','Wolof','Balante','Mandyako','Bubi','Greenlandic','Cakchiquel','Kekchí','Mam','Quiché','Chamorro','Korean','Philippene Languages','Chiu chau','Fukien','Hakka','Miskito','Haiti Creole','Bali','Banja','Batakki','Bugi','Javanese','Madura','Minangkabau','Sunda','Gujarati','Kannada','Malajalam','Marathi','Orija','Tamil','Telugu','Urdu','Irish','Bakhtyari','Gilaki','Kurdish','Luri','Mazandarani','Persian','Assyrian','Icelandic','Hebrew','Friuli','Sardinian','Circassian','Ainu','Kazakh','Tatar','Gusii','Kalenjin','Kamba','Kikuyu','Luhya','Luo','Masai','Meru','Nyika','Turkana','Kirgiz','Tadzhik','Khmer','Tšam','Kiribati','Tuvalu','Lao','Lao-Soung','Mon-khmer','Thai','Bassa','Gio','Grebo','Mano','Mixed Languages','Singali','Sotho','Zulu','Lithuanian','Luxembourgish','Latvian','Mandarin Chinese','Monegasque','Gagauzi','Malagasy','Dhivehi','Mixtec','Náhuatl','Otomí','Yucatec','Zapotec','Marshallese','Bambara','Senufo and Minianka','Songhai','Tamashek','Maltese','Burmese','Chin','Kachin','Karen','Kayah','Mon','Rakhine','Shan','Bajad','Buryat','Dariganga','Dorbet','Carolinian','Chuabo','Lomwe','Makua','Marendje','Nyanja','Ronga','Sena','Tsonga','Tswa','Hassaniya','Tukulor','Zenaga','Bhojpuri','Chichewa','Ngoni','Yao','Dusun','Iban','Mahoré','Afrikaans','Caprivi','Herero','Kavango','Nama','Ovambo','Malenasian Languages','Polynesian Languages','Hausa','Kanuri','Songhai-zerma','Bura','Edo','Ibibio','Ibo','Ijo','Tiv','Sumo','Niue','Fries','Maithili','Newari','Tamang','Tharu','Nauru','Brahui','Hindko','Saraiki','Sindhi','Cuna','Embera','Guaymí','Pitcairnese','Bicol','Cebuano','Hiligaynon','Ilocano','Maguindanao','Maranao','Pampango','Pangasinan','Pilipino','Waray-waray','Palau','Papuan Languages','Tahitian','Avarian','Bashkir','Chechen','Chuvash','Mari','Mordva','Udmur','Bari','Beja','Chilluk','Dinka','Fur','Lotuko','Nubian Languages','Nuer','Serer','Bullom-sherbro','Kono-vai','Kuranko','Limba','Mende','Temne','Nahua','Sranantonga','Czech and Moravian','Ukrainian and Russian','Swazi','Seselwa','Gorane','Hadjarai','Kanem-bornu','Mayo-kebbi','Ouaddai','Tandjile','Ane','Kabyé','Kotokoli','Moba','Naudemba','Watyi','Kuy','Tokelau','Arabic-French','Arabic-French-English','Ami','Atayal','Min','Paiwan','Chaga and Pare','Gogo','Ha','Haya','Hehet','Luguru','Makonde','Nyakusa','Nyamwesi','Shambala','Acholi','Ganda','Gisu','Kiga','Lango','Lugbara','Nkole','Soga','Teso','Tagalog','Karakalpak','Goajiro','Warrau','Man','Muong','Nung','Tho','Bislama','Futuna','Wallis','Samoan-English','Soqutri','Northsotho','Southsotho','Venda','Xhosa','Bemba','Chewa','Lozi','Nsenga'];
     $scope.selectedLang = {value: $scope.languages[0]};
-    $scope.selectedPer = 0;
+    $scope.selectedPer = {value: 0};
 
     //SSB
     $scope.selected_dyear1 = 1992;
