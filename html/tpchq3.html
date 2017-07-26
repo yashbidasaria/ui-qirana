@@ -1,0 +1,47 @@
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
+
+    <span ng-show="form.b5.$error.max || form.b5.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> interval must be between 1 and 4
+        </div>
+    </span>
+
+    <span ng-show="form.b1.$error.max || form.b1.$error.min || form.b2.$error.max || form.b2.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> l_discount must be between 0.00 and 1.00
+        </div>
+    </span>
+    <span ng-show="form.b3.$error.max || form.b3.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> l_quantity must be between 1 and 50
+        </div>
+    </span>
+
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;n_name,</p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(l_extendedprice * l_discount) <span style="color:dodgerblue;">AS</span> revenue</p>
+    <p><span style="color:dodgerblue;">FROM</span> lineitem,</p>
+
+    <p><span style="color:dodgerblue;"> WHERE</span> l_shipdate >=  <span style="color:dodgerblue;">DATE</span> '1994-01-01'  </p>
+    <p><span style="color:dodgerblue;"> AND</span> o_orderdate >= <span style="color:dodgerblue;">DATE</span> '1994-01-01' </p>
+    <div class = "ui input" style="display: inline-block;"> <span style="color:dodgerblue;">AND</span>  l_shipdate < <span style="color:dodgerblue;">DATE</span> '1994-01-01' + interval
+        <input type="number" name="b5" ng-model="selected_interval" min = "1" max = "4"> year
+        <br>
+        <span style="color:dodgerblue;">AND</span>  l_discount <span style="color:dodgerblue;">BETWEEN</span>
+        <input type="number" step="0.01" name="b1" ng-model="tpch_lowdis" min = "0" max = "1.00">
+        <span style="color:dodgerblue;">AND</span>
+        <input type="number" step="0.01" name="b2" ng-model="tpch_highdis" min = "0" max = "1.00">
+        <br>
+        <span style="color:dodgerblue;">AND</span> l_quantity <
+        <input type="number"  name="b3" ng-model="tpch_quan" min = "1" max = "50">
+    </div>
+
+
+
+
+
+</form>

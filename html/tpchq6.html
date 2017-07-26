@@ -1,0 +1,19 @@
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(l_extendedprice) / 7.0 <span style="color:dodgerblue;">AS</span> avg_yearly</p>
+
+    <p><span style="color:dodgerblue;">FROM</span>  lineitem,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;part</p>
+    <p><span style="color:dodgerblue;"> WHERE</span> p_partkey = l_partkey  </p>
+    <p><span style="color:dodgerblue;"> AND</span> p_brand =
+        <select class="ui dropdown" ng-model="selected_brand.value" ng-options="x for x in tpch_brand">
+        </select>
+    </p>
+
+    <p><span style="color:dodgerblue;"> AND</span> p_container = 'MED BOX'  </p>
+    <p><span style="color:dodgerblue;"> AND</span> l_quantity < 5.1036 </span> </p>
+</form>

@@ -1,0 +1,41 @@
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
+
+    <span ng-show="form.b5.$error.max || form.b5.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> interval must be between 1 and 4
+        </div>
+    </span>
+
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;l_shipmode,</p>
+    <p>&emsp;o_orderpriority </p>
+    <p><span style="color:dodgerblue;">FROM</span> orders,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;lineitem</p>
+    <p><span style="color:dodgerblue;"> WHERE</span> l_orderkey = o_orderkey </p>
+    <p><span style="color:dodgerblue;"> AND</span> (l_shipmode =
+        <select class="ui dropdown" ng-model="selected_ship1.value" ng-options="x for x in shipmode">
+        </select><span style="color:dodgerblue;"> OR </span> l_shipmode =
+    <select class="ui dropdown" ng-model="selected_ship2.value" ng-options="x for x in shipmode">
+        </select>)
+    </p>
+    <p><span style="color:dodgerblue;"> AND</span> l_commitdate < l_receiptdate </p>
+    <p><span style="color:dodgerblue;"> AND</span> l_shipdate < l_commitdate </p>
+    <p><span style="color:dodgerblue;"> AND</span> l_receiptdate >= <span style="color:dodgerblue;">DATE</span> '1994-01-01'  </p>
+    <div class = "ui input" style="display: inline-block;"> <span style="color:dodgerblue;">AND</span>  l_receiptdate <  <span style="color:dodgerblue;">DATE</span> '1994-01-01' + interval
+        <input type="number" name="b5" ng-model="selected_interval" min = "1" max = "4"> year
+
+    </div>
+    <p><span style="color:dodgerblue;"> GROUP BY</span> l_shipmode</p>
+    <p><span style="color:dodgerblue;"> ORDER BY</span> l_shipmode</p>
+
+
+
+
+
+
+
+</form>

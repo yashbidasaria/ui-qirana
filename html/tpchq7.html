@@ -1,0 +1,48 @@
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;s_acctbal,</p>
+    <p>&emsp;s_name, </p>
+    <p>&emsp;n_name, </p>
+    <p>&emsp;p_partkey, </p>
+    <p>&emsp;p_mfgr, </p>
+    <p>&emsp;s_address, </p>
+    <p>&emsp;s_phone, </p>
+    <p>&emsp;s_comment </p>
+    <p><span style="color:dodgerblue;">FROM</span>  part,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;supplier,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;partsupp,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;nation,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;region</p>
+    <p><span style="color:dodgerblue;"> WHERE</span> p_partkey = ps_partkey   </p>
+    <p><span style="color:dodgerblue;"> AND</span> s_suppkey = ps_suppkey    </p>
+    <p><span style="color:dodgerblue;"> AND</span> p_type <span style="color:dodgerblue;"> LIKE </span>
+        <select class="ui dropdown" ng-model="selected_ptype.value" ng-options="x for x in tpch_ptype">
+        </select>
+    </p>
+    <p><span style="color:dodgerblue;"> AND</span> s_nationkey = n_nationkey     </p>
+    <p><span style="color:dodgerblue;"> AND</span> n_regionkey = r_regionkey    </p>
+
+    <p><span style="color:dodgerblue;"> AND</span> r_name =
+        <select class="ui dropdown" ng-model="selected_region.value" ng-options="x for x in tpch_region">
+        </select>
+    </p>
+
+    <p><span style="color:dodgerblue;"> AND</span> ps_supplycost = 100  </p>
+    <p><span style="color:dodgerblue;"> ORDER BY</span> s_acctbal <span style="color:dodgerblue;"> DESC</span></p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;n_name,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;s_name,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;p_partkey</p>
+    <p><span style="color:dodgerblue;"> LIMIT</span> 100</p>
+
+
+
+
+
+
+
+
+</form>

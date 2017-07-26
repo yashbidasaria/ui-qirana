@@ -1,27 +1,160 @@
 
-<br>
-<br>
 <div class = "row">
-    <div class = "container">
-        <div class="panel-heading" style="background-color: silver" id = "inf">
-            <h3 class="panel-title"><b>Dataset Information</b></h3>
+    <div class = "container" >
+        <div class="heading"  id = "inf">
+            <h3>Dataset Information</h3>
+        </div>
+        <hr class="thin bg-grayDarker">
+        <br>
+        <div align="left" id = "info" style="font-family: Consolas;">
+            <p><b>Dataset Name: </b> {{choice.name}}</p>
+            <p><b>Seller: </b><input ng-model="choice.seller"></p>
+            <p><b>Description: </b><input style="width: 800px" ng-model="choice.info"></p>
+            <div ng-repeat="x in sets"><b>Table Name: </b> {{x.name}}
+                <br><br>
+                <p>&emsp;&emsp;Price: <input type = "number" ng-model="setprice[$index]" placeholder="$"></p></div>
+        </div>
+        <br><br>
+
+        <div align = "left">
+            <h4>
+                Query 1
+            </h4>
+            <hr class="thin bg-grayDarker">
+            <span ng-show="q1e1">
+                <div class="alert alert-danger" role="alert">
+                    <strong>Error</strong> Range already selected
+                </div>
+            </span>
+            <span ng-show="q1e2">
+                <div class="alert alert-danger" role="alert">
+                    <strong>Error</strong> Range-Price mismatch
+                </div>
+            </span>
+            <form name="form" style="font-family: Consolas;">
+                <p style="color:dodgerblue;">SELECT</p>
+                <p>&emsp;<span>*</span></p>
+                <p><span style="color:dodgerblue;">FROM</span> Crash</p>
+                <div class = "ui input"><span style="color:dodgerblue;">WHERE  </span> PK in <span style="color:dodgerblue;">BETWEEN </span>
+                    <input type="number" name="number" ng-model="selected1">
+                    <span style="color:dodgerblue;">AND </span> <input type="number" name="number2" ng-model="selected2">
+                    <br><br>
+                    <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input type="number"  placeholder="price" ng-model = "price1">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &emsp;
+
+                        <button class="btn btn-success" ng-click="addQuery1()">
+                            <span>Add</span>
+                        </button>
+                    </div>
+                    <table ng-if="query1.length>0"  ng-table="vm.tableParams" class="table" show-filter="true">
+                        <tr>
+                            <th>Query
+                            </th>
+                            <th>Price($)
+                            </th>
+                        </tr>
+                        <tr ng-repeat="q in query1">
+                            <td>
+                                <p style="color:dodgerblue; margin: 0px">SELECT</p>
+                                <p style="margin: 0px">&emsp;<span>*</span></p>
+                                <p style="margin: 0px"><span style="color:dodgerblue;">FROM</span> Crash</p>
+                                <p style="margin: 0px"><span style="color:dodgerblue;">WHERE</span> PK in <span style="color:dodgerblue;">BETWEEN </span> {{q.lower}}
+                                    <span style="color:dodgerblue;">AND </span> {{q.higher}}</p>
+
+                            </td>
+                            <td>{{q.price}}
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </form>
+
+
+
+
         </div>
         <br>
-        <div align="left" id = "info" >
-            <p><b>Dataset Name: </b> <input ng-model="choice.name"></p>
-            <p><b>Seller: </b><input ng-model="choice.seller"></p>
-            <p><b>Description: </b><input ng-model="choice.info"></p>
-            <p><b>Dataset Price: </b><input ng-model="choice.price"></p>
+        <div align = "left">
+            <h4>
+                Query 2
+            </h4>
+            <hr class="thin bg-grayDarker">
+            <span ng-show="q2e1">
+                <div class="alert alert-danger" role="alert">
+                    <strong>Error</strong> Range already selected
+                </div>
+            </span>
+            <span ng-show="q2e2">
+                <div class="alert alert-danger" role="alert">
+                    <strong>Error</strong> Range-Price mismatch
+                </div>
+            </span>
+            <form name="form" style="font-family: Consolas;">
+
+            <p style="color:dodgerblue;">SELECT</p>
+            <p>&emsp;<span>*</span></p>
+            <p><span style="color:dodgerblue;">FROM</span> Crash</p>
+
+                <ui-select multiple ng-model="tags.selected" theme="bootstrap" style="width: 300px;">
+                    <ui-select-match allow-clear>{{$item}}</ui-select-match>
+                    <ui-select-choices repeat="item in tags.available | filter: $select.search">
+                        {{item}}
+                    </ui-select-choices>
+                </ui-select>
+                <br>
+
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="number"  placeholder="price" ng-model="price2">
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    &emsp;
+
+                    <button class="btn btn-success" ng-click="addQuery2()">
+                        <span>Add</span>
+                    </button>
+                </div>
+
+                <table ng-if="query2.length>0"  ng-table="vm.tableParams" class="table" show-filter="true">
+                    <tr>
+                        <th>Query
+                        </th>
+                        <th>Price($)
+                        </th>
+                    </tr>
+                    <tr ng-repeat="q in query2">
+                        <td>
+                            <p style="color:dodgerblue; margin: 0px">SELECT</p>
+                            <p style="margin: 0px">&emsp;<span>*</span></p>
+                            <p style="margin: 0px"><span style="color:dodgerblue;">FROM</span> Crash</p>
+                            <p style="margin: 0px"><span ng-repeat = "c in q.columns">{{c}}<span ng-if="$index < q.columns.length-1">,</span>
+                                </span></p>
+                        </td>
+                        <td>{{q.price}}
+                        </td>
+                    </tr>
+                </table>
+
+
+            </form>
         </div>
+        <br><br><br>
         <button class="btn btn-primary" ng-click="change()">
             <span>Reset Information</span>
         </button>
         <br>
-        <br>
+
     </div>
     <br>
 
-    <div class = "col-md-9" id = "chartt">
-    </div>
+
 </div>
 

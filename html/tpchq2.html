@@ -1,0 +1,46 @@
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
+
+    <span ng-show="form.b5.$error.max || form.b5.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> interval must be between 1 and 4
+        </div>
+    </span>
+
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;n_name,</p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(l_extendedprice * (1 - l_discount)) <span style="color:dodgerblue;">AS</span> revenue</p>
+    <p><span style="color:dodgerblue;">FROM</span>     customer,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp; orders, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp; lineitem,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp; supplier, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp; nation, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;  region </p>
+
+    <p><span style="color:dodgerblue;"> WHERE</span> c_custkey = o_custkey </p>
+    <p><span style="color:dodgerblue;"> AND</span> l_orderkey = o_orderkey </p>
+    <p><span style="color:dodgerblue;"> AND</span> l_suppkey = s_suppkey </p>
+    <p><span style="color:dodgerblue;"> AND</span> c_nationkey = s_nationkey</p>
+    <p><span style="color:dodgerblue;"> AND</span> s_nationkey = n_nationkey </p>
+    <p><span style="color:dodgerblue;"> AND</span> n_regionkey = r_regionkey </p>
+    <p><span style="color:dodgerblue;"> AND</span> r_name =
+        <select class="ui dropdown" ng-model="selected_region.value" ng-options="x for x in tpch_region">
+        </select> </p>
+    <p><span style="color:dodgerblue;"> AND</span> o_orderdate >=  <span style="color:dodgerblue;">DATE</span> '1994-01-01' </p>
+    <div class = "ui input" style="display: inline-block;"> <span style="color:dodgerblue;">AND</span>  o_orderdate <  <span style="color:dodgerblue;">DATE</span> '1994-01-01' + interval
+        <input type="number" name="b5" ng-model="selected_interval" min = "1" max = "4"> year
+
+    </div>
+    <p><span style="color:dodgerblue;"> GROUP BY</span> n_name</p>
+    <p><span style="color:dodgerblue;"> ORDER BY</span> revenue<span style="color:dodgerblue;"> DESC</span></p>
+
+
+
+
+
+
+
+</form>

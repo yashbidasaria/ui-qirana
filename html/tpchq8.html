@@ -1,0 +1,35 @@
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;l_returnflag,</p>
+    <p>&emsp;l_linestatus, </p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(l_quantity) <span style="color:dodgerblue;"> AS</span> sum_qty, </p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(l_extendedprice)<span style="color:dodgerblue;"> AS</span> sum_base_price,</p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(l_extendedprice * (1 - l_discount)) <span style="color:dodgerblue;"> AS </span> sum_disc_price,</p>
+    <p>&emsp;<span style="color:hotpink;">SUM</span>(l_extendedprice * (1 - l_discount) * (1 + l_tax))<span style="color:dodgerblue;"> AS </span>sum_charge,</p>
+    <p>&emsp;<span style="color:hotpink;">AVG</span>(l_quantity)<span style="color:dodgerblue;"> AS </span> avg_qty,</p>
+    <p>&emsp;<span style="color:hotpink;">AVG</span>(l_extendedprice)<span style="color:dodgerblue;"> AS </span> avg_price, </p>
+    <p>&emsp;<span style="color:hotpink;">AVG</span>(l_discount)<span style="color:dodgerblue;"> AS </span> avg_disc,</p>
+    <p>&emsp;<span style="color:hotpink;">COUNT</span>(*)<span style="color:dodgerblue;"> AS </span> count_order</p>
+
+    <p><span style="color:dodgerblue;">FROM</span>  lineitem,</p>
+    <p><span style="color:dodgerblue;"> WHERE</span> l_shipdate <= <span style="color:dodgerblue;">DATE</span> '1998-09-01'   </p>
+    <p><span style="color:dodgerblue;"> GROUP BY</span>l_returnflag,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;l_linestatus </p>
+    <p><span style="color:dodgerblue;"> ORDER BY</span>l_returnflag,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;l_linestatus </p>
+
+
+
+
+
+
+
+
+
+
+
+</form>

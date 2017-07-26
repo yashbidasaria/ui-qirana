@@ -1,0 +1,26 @@
+<style>
+    p { margin:0 }
+</style>
+
+
+<form name="form" style="font-family: Consolas;">
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;<span style="color:hotpink;">*</span></p>
+    <p><span style="color:dodgerblue;">FROM</span> {{sets.name}} =
+
+    </p>
+    <p style="color:dodgerblue;">WHERE columns =
+        <ui-select tagging ng-model="tags.chosen" theme="bootstrap" style="width: 300px;">
+            <ui-select-match allow-clear>{{$select.selected}}</ui-select-match>
+            <ui-select-choices repeat="item in tags.available | filter: $select.search" disabe>
+                {{item}}
+            </ui-select-choices>
+        </ui-select>
+    </p>
+
+
+</form>
+
+
+
+

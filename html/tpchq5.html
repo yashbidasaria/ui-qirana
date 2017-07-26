@@ -1,0 +1,45 @@
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;p_brand,</p>
+    <p>&emsp;p_type, </p>
+    <p>&emsp;p_size, </p>
+    <p>&emsp;<span style="color:hotpink;">COUNT</span>(<span style="color:dodgerblue;">DISTINCT</span> ps_suppkey) <span style="color:dodgerblue;">AS</span> supplier_cnt</p>
+
+    <p><span style="color:dodgerblue;">FROM</span>  partsupp,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;part</p>
+    <p><span style="color:dodgerblue;"> WHERE</span> p_partkey = ps_partkey  </p>
+    <p><span style="color:dodgerblue;"> AND</span> p_brand <>
+        <select class="ui dropdown" ng-model="selected_brand.value" ng-options="x for x in tpch_brand">
+        </select>
+    </p>
+    <p><span style="color:dodgerblue;"> AND</span> p_type <span style="color:dodgerblue;">NOT LIKE </span>
+        <select class="ui dropdown" ng-model="selected_type.value" ng-options="x for x in tpch_type">
+        </select>
+    </p>
+    <p><span style="color:dodgerblue;"> AND</span> p_size <span style="color:dodgerblue;">NOT IN</span> (49, 14, 23, 45, 19, 3, 36, 9) </p>
+    <p><span style="color:dodgerblue;"> AND</span> ps_suppkey <span style="color:dodgerblue;">NOT IN </span> (
+        <span style="color:dodgerblue;"> SELECT</span> s_suppkey
+        <br><span style="color:dodgerblue;"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;FROM</span> supplier
+        <br><span style="color:dodgerblue;"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;WHERE</span> s_comment<span style="color:dodgerblue;"> LIKE</span> '%Customer%Complaints%')
+    </p>
+
+
+    <p><span style="color:dodgerblue;"> GROUP BY</span> p_brand,</p>
+    <p> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;p_type,</p>
+    <p> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;p_size</p>
+    <p><span style="color:dodgerblue;"> ORDER BY</span> supplier_cnt <span style="color:dodgerblue;"> DESC</span></p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;p_brand,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;p_type,</p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;p_size</p>
+
+
+
+
+
+
+
+</form>

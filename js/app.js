@@ -361,6 +361,43 @@ app.controller("buyer2", ['$scope', '$rootScope', 'shared', '$routeParams', '$ht
             $scope.confirm = true;
         });
     };
+    var tpchQ = function (q){
+            var str = '';
+            if(q.value == 'q1') {
+                str += '&interval=' + $scope.selected_interval
+            };
+            if(q.value == 'q2') {
+                str += '&r_name=' + $scope.selected_region + '&interval=' + $scope.selected_interval
+            };
+            if(q.value == 'q3') {
+                str += '&interval=' + $scope.selected_interval + '&discount_1=' + $scope.tpch_lowdis  + '&discount_2=' + $scope.tpch_highdis + '&quantity=' + $scope.tpch_quan
+            };
+            if(q.value == 'q4') {
+                str += '&shipmode_1=' + $scope.selected_ship1 + '&shipmode_2=' + $scope.selected_ship2 + '&interval=' + $scope.selected_interval
+            };
+            if(q.value == 'q5') {
+                str += '&p_type=' + $scope.selected_type + '&p_brand=' + $scope.selected_brand
+            };
+            if(q.value == 'q6') {
+                str += '&p_brand=' + $scope.selected_brand
+            };
+            if(q.value == 'q7') {
+            str += '&p_type=' + $scope.selectedp_type
+            };
+            $http({
+                method: "GET",
+                url: "http://127.0.0.1:8080/qirana/tpch/?id=" + q.value + encodeURI(str)
+            }).then(function success(response){
+                console.log("price: " + response.data)
+                $scope.price = response.data
+            }).catch(function (response) {
+                console.log("pricing error occured: " + response.status)
+            }).finally(function (){
+                console.log("pricing finished");
+                $scope.loading = false;
+                $scope.confirm = true;
+            });
+        };
 
 
         $scope.getPurchasePrice = function(q) {
@@ -377,6 +414,9 @@ app.controller("buyer2", ['$scope', '$rootScope', 'shared', '$routeParams', '$ht
         if($rootScope.db_choice.name == "ssb"){
                 ssbQ(q)
         }
+        if($rootScope.db_choice.name == "tpch"){
+                tpchQ(q)
+            }
             $scope.loading = false;
             $scope.confirm = true;
 
@@ -481,6 +521,24 @@ app.controller("buyer2", ['$scope', '$rootScope', 'shared', '$routeParams', '$ht
     $scope.c_nation = ['PERU','ETHIOPIA','ARGENTINA','MOROCCO','IRAQ','KENYA','UNITED KINGDOM','IRAN','UNITED STATES','CHINA','INDIA','CANADA','RUSSIA','ROMANIA','MOZAMBIQUE','BRAZIL','EGYPT','INDONESIA','ALGERIA','VIETNAM','GERMANY','JORDAN','JAPAN','FRANCE','SAUDI ARABIA'] ;
     $scope.selecteds_nation = {value: $scope.s_nation[0]};
     $scope.selectedc_nation = {value: $scope.c_nation[0]};
+
+
+    $scope.selected_interval = 1;
+    $scope.tpch_region = ['AFRICA','AMERICA','ASIA','EUROPE','MIDDLE EAST'];
+    $scope.selected_region = {value : $scope.tpch_region[0]};
+    $scope.tpch_lowdis = 0;
+    $scope.tpch_highdis = 1;
+    $scope.tpch_quan = 1;
+    $scope.shipmode = ['TRUCK','MAIL','REG AIR','AIR','FOB','RAIL','SHIP'];
+    $scope.selected_ship1 = {value: $scope.shipmode[0]};
+    $scope.selected_ship2 = {value: $scope.shipmode[5]};
+    $scope.tpch_brand = ['Brand#13','Brand#42','Brand#34','Brand#32','Brand#24','Brand#11','Brand#44','Brand#43','Brand#54','Brand#25','Brand#33','Brand#55','Brand#15','Brand#23','Brand#12','Brand#35','Brand#52','Brand#14','Brand#53','Brand#22','Brand#45','Brand#21','Brand#41','Brand#51','Brand#31'];
+    $scope.selected_brand = {value : $scope.tpch_brand};
+    $scope.tpch_type = ['PROMO BURNISHED COPPER','LARGE BRUSHED BRASS','STANDARD POLISHED BRASS','SMALL PLATED BRASS','STANDARD POLISHED TIN','PROMO PLATED STEEL','SMALL PLATED COPPER','PROMO BURNISHED TIN','SMALL BURNISHED STEEL','LARGE BURNISHED STEEL','STANDARD BURNISHED NICKEL','MEDIUM ANODIZED STEEL','MEDIUM BURNISHED NICKEL','SMALL POLISHED STEEL','LARGE ANODIZED BRASS','PROMO PLATED TIN','ECONOMY BRUSHED STEEL','SMALL ANODIZED NICKEL','LARGE POLISHED NICKEL','SMALL BURNISHED TIN','PROMO POLISHED BRASS','MEDIUM BURNISHED TIN','MEDIUM PLATED STEEL','STANDARD BRUSHED COPPER','SMALL BRUSHED STEEL','LARGE ANODIZED TIN','PROMO PLATED COPPER','PROMO ANODIZED TIN','STANDARD BRUSHED TIN','ECONOMY PLATED BRASS','ECONOMY PLATED NICKEL','LARGE BRUSHED STEEL','MEDIUM ANODIZED BRASS','SMALL BURNISHED COPPER','LARGE POLISHED TIN','ECONOMY ANODIZED BRASS','SMALL POLISHED TIN','ECONOMY BURNISHED COPPER','ECONOMY ANODIZED TIN','PROMO POLISHED STEEL','MEDIUM PLATED TIN','SMALL BRUSHED NICKEL','LARGE BURNISHED BRASS','STANDARD BRUSHED STEEL','ECONOMY BURNISHED NICKEL','STANDARD BURNISHED TIN','LARGE BURNISHED COPPER','ECONOMY BRUSHED COPPER','MEDIUM BURNISHED BRASS','MEDIUM POLISHED TIN','LARGE POLISHED COPPER','SMALL BURNISHED NICKEL','STANDARD BRUSHED BRASS','MEDIUM BRUSHED COPPER','PROMO ANODIZED NICKEL','SMALL BRUSHED TIN','PROMO ANODIZED STEEL','MEDIUM POLISHED BRASS','STANDARD PLATED BRASS','STANDARD ANODIZED TIN','SMALL BRUSHED COPPER','ECONOMY POLISHED STEEL','PROMO ANODIZED BRASS','PROMO PLATED BRASS','ECONOMY BRUSHED TIN','ECONOMY POLISHED TIN','PROMO BURNISHED NICKEL','STANDARD PLATED TIN','LARGE PLATED STEEL','STANDARD BURNISHED STEEL','LARGE BRUSHED TIN','STANDARD ANODIZED BRASS','LARGE ANODIZED STEEL','MEDIUM PLATED BRASS','SMALL POLISHED COPPER','PROMO PLATED NICKEL','STANDARD BURNISHED COPPER','LARGE BRUSHED COPPER','PROMO BRUSHED STEEL','PROMO POLISHED TIN','MEDIUM POLISHED NICKEL','STANDARD POLISHED STEEL','PROMO POLISHED NICKEL','LARGE POLISHED STEEL','MEDIUM ANODIZED TIN','MEDIUM BRUSHED NICKEL','SMALL PLATED NICKEL','STANDARD BURNISHED BRASS','MEDIUM BURNISHED STEEL','SMALL PLATED STEEL','ECONOMY PLATED STEEL','MEDIUM BRUSHED STEEL','STANDARD PLATED STEEL','STANDARD ANODIZED STEEL','ECONOMY PLATED TIN','SMALL ANODIZED TIN','PROMO BRUSHED COPPER','MEDIUM PLATED COPPER','LARGE PLATED BRASS','MEDIUM POLISHED STEEL','SMALL POLISHED NICKEL','ECONOMY ANODIZED STEEL','MEDIUM BURNISHED COPPER','SMALL ANODIZED BRASS','STANDARD POLISHED COPPER','MEDIUM ANODIZED COPPER','ECONOMY BURNISHED TIN','SMALL ANODIZED STEEL','MEDIUM BRUSHED BRASS','LARGE BURNISHED NICKEL','ECONOMY BURNISHED BRASS','STANDARD BRUSHED NICKEL','SMALL ANODIZED COPPER','PROMO BRUSHED NICKEL','LARGE ANODIZED NICKEL','STANDARD PLATED COPPER','LARGE PLATED COPPER','MEDIUM ANODIZED NICKEL','PROMO BRUSHED BRASS','MEDIUM PLATED NICKEL','STANDARD POLISHED NICKEL','LARGE BURNISHED TIN','LARGE PLATED NICKEL','PROMO BURNISHED BRASS','ECONOMY POLISHED COPPER','STANDARD ANODIZED COPPER','SMALL BURNISHED BRASS','LARGE POLISHED BRASS','ECONOMY ANODIZED NICKEL','SMALL PLATED TIN','ECONOMY BRUSHED NICKEL','PROMO BURNISHED STEEL','PROMO BRUSHED TIN','MEDIUM BRUSHED TIN','PROMO POLISHED COPPER','STANDARD ANODIZED NICKEL','ECONOMY POLISHED NICKEL','LARGE BRUSHED NICKEL','ECONOMY BURNISHED STEEL','SMALL POLISHED BRASS','ECONOMY ANODIZED COPPER','STANDARD PLATED NICKEL','LARGE ANODIZED COPPER','ECONOMY POLISHED BRASS','SMALL BRUSHED BRASS','PROMO ANODIZED COPPER','LARGE PLATED TIN','ECONOMY BRUSHED BRASS','MEDIUM POLISHED COPPER','ECONOMY PLATED COPPER'];
+        $scope.selected_type = {value : $scope.tpch_type};
+        $scope.tpch_ptype = ['%STEEL', '%TIN', '%BRASS', '%COPPER', '%NICKEL'];
+        $scope.selectedp_type = {value: $scope.tpch_ptype[0]};
+
 
 
 

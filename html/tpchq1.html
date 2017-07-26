@@ -1,0 +1,31 @@
+<style>
+    p { margin:0 }
+</style>
+<form name="form" style="font-family: Consolas;">
+
+    <span ng-show="form.b5.$error.max || form.b5.$error.min">
+        <div class="alert alert-danger" role="alert">
+            <strong>Error</strong> interval must be between 1 and 30
+        </div>
+    </span>
+
+
+    <p style="color:dodgerblue;">SELECT</p>
+    <p>&emsp;o_orderpriority,</p>
+    <p>&emsp;<span style="color:hotpink;">COUNT</span>(*) <span style="color:dodgerblue;">AS</span> order_count</p>
+    <p><span style="color:dodgerblue;">FROM</span> orders, </p>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;lineitem </p>
+    <p><span style="color:dodgerblue;"> WHERE</span> orderdate >= 1993-07-01</p>
+    <div class = "ui input" style="display: inline-block;"> <span style="color:dodgerblue;">AND</span> orderdate < 1993-07-01 + inverval
+        <input type="number" name="b5" ng-model="selected_interval" min = "1" max = "30"> month
+
+    </div>
+    <p><span style="color:dodgerblue;"> AND</span> l_orderkey = o_orderkey </p>
+    <p><span style="color:dodgerblue;"> AND</span> l_commitdate < l_receiptdate group</p>
+    <p><span style="color:dodgerblue;"> GROUP BY</span> o_orderpriority</p>
+    <p><span style="color:dodgerblue;"> ORDER BY</span> o_orderpriority </p>
+
+
+
+
+</form>
