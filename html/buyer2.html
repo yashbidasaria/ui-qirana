@@ -8,43 +8,78 @@
                     <div class="cell colspan4">
                         <div class="panel"  style="-webkit-animation: fadein 0.5s;">
                             <div class="heading">
-                                <span class="title">About Crash Dataset</span>
+                                <span class="title">Graph</span>
                             </div>
-                            <div class="content padding10 align-left">
-                                Crash Dataset - Information about accidents in US for the claendar year 2011-2012. Includes all 51 states.
-                            </div>
+
+                            <div id="chart"></div>
+
                         </div>
                     </div>
 
                     <div class="cell colspan8">
                         <div class="panel"  style="-webkit-animation: fadein 1s;">
                             <div class="heading">
-                                <span class="title">Other Dataset Information</span>
+                                <span class="title">Query Dataset</span>
                             </div>
-                            <div class="content padding10 align-left">
-                                <p class="no-margin">Dataset sold by Department of Transportation, US </p>
-                                <p class="no-margin"> Dataset contains single table called crash. Total number of tuples in the table - 71115.
-                                Data sanitized by replacing all empty values by the lowest value in the active domain.</p>
+
+                            <div class="row cells12">
+                                <div class="cell colspan4">
+                                    <div class="content padding10 align-left">
+                                        <div dropdown-select="ddSelectOptions"
+                                             dropdown-model="ddSelectSelected"
+                                             dropdown-item-label="text">
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                    <br>
+
+                                </div>
+                                <br><br><br><br>
+                                <div class="  align-left padding10">
+                                    <div ng-include="ddSelectSelected.htmltemplate"></div>
+                                </div>
+
+                                <span class="input-group-btn" ng-show="//(!loading && !confirm)">
+                                            <button class="btn btn-primary" ng-click="getPurchasePrice(ddSelectSelected)"
+                                                    data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">
+                                                <span>Purchase Query</span>
+                                            </button>
+                                    </span>
+
+                                <div class="ld ld-hourglass ld-spin-fast padding10" ng-show="loading" style="font-size:32px;color:#8da"></div>
+
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="panel"  style="-webkit-animation: fadein 1.2s;">
-                    <div class="heading">
-                        <span class="title">Schema Preview</span>
-                    </div>
-                    <div class="content padding10" style="background-color: white">
-                        <div class="panel-body table-responsive" style="max-width:2000px;max-height: 200px;">
-                            <table class="table table-bordered"  ng-repeat = "items in tables" ng-table="vm.tableParams" >
-                                <tr>
-                                    <th ng-repeat="(key, val) in items[0]">{{key}}</th>
-                                </tr>
-                                <tr ng-repeat="item in items">
-                                    <td style="font-size:10px" ng-repeat="(key, val) in item">{{val}}</td>
-                                </tr>
-                            </table>
+
+                            <br>
+
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" >&times;</button>
+                                            <h4 class="modal-title">Confirm Transcation</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Purchasing the query will cost ${{price}}. Click OK to confirm transaction.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="button primary" ng-click="confirmPurchase('OK')" data-dismiss="modal">OK</button>
+                                            <button type="button" class="button danger" ng-click="confirmPurchase('Deny')" data-dismiss="modal">Deny</button>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -54,10 +89,11 @@
                     <div class="cell colspan4">
                         <div class="panel"  style="-webkit-animation: fadein 0.5s;">
                             <div class="heading">
-                                <span class="title">Test</span>
+                                <span class="title">Summary</span>
                             </div>
                             <div class="content padding10 align-left">
-                                Test
+                                <b>Total Purchased ($) : </b> {{}}<br>
+                                <b>Total Savings ($) : </b> {{}}
                             </div>
                         </div>
                     </div>
@@ -65,57 +101,31 @@
                     <div class="cell colspan8">
                         <div class="panel"  style="-webkit-animation: fadein 1s;">
                             <div class="heading">
-                                <span class="title">Query Dataset</span>
+                                <span class="title">Schema Preview</span>
                             </div>
-                            <div class="row cells12">
-                                <div class="cell colspan4">
-                                    <div class="content padding10 align-left">
-                                            <div dropdown-select="ddSelectOptions"
-                                                dropdown-model="ddSelectSelected"
-                                                dropdown-item-label="text" >
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row cells12">
-                                <div class="cell colspan12">
-                                    <div class="  align-left padding10" style="display: inline-block">
-                                        <div ng-include="ddSelectSelected.htmltemplate"></div>
-                                    </div>
 
-                                    <span class="input-group-btn" ng-show="(!loading && !confirm)">
-                                            <button class="btn btn-primary" ng-click="getPurchasePrice(ddSelectSelected)">
-                                                <span>Purchase Query</span>
-                                            </button>
-                                    </span>
-                                    <div class="ld ld-hourglass ld-spin-fast padding10" ng-show="loading" style="font-size:32px;color:#8da"></div>
+                            <div class="row cells12">
+                                <div class="content padding10" style="background-color: white">
+                                    <div class="panel-body table-responsive" style="max-width:2000px;max-height: 200px;">
+                                        <table class="table table-bordered"  ng-repeat = "items in tables" ng-table="vm.tableParams" >
+                                            <tr>
+                                                <th ng-repeat="(key, val) in items[0]">{{key}}</th>
+                                            </tr>
+                                            <tr ng-repeat="item in items">
+                                                <td style="font-size:10px" ng-repeat="(key, val) in item">{{val}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                             <br>
-                            <div class="window" ng-show="confirm" style="max-width: 400px">
-                                <div class="window-caption">
-                                    <span class="window-caption-icon"><span class="mif-windows"></span></span>
-                                    <span class="window-caption-title">Confirm Transaction</span>
-                                    <span class="btn-close"></span>
-                                </div>
-                                <div class="window-content align-left">
-                                    Purchasing the query will cost ${{price}}. Click OK to confirm transaction.
-                                    <br>
-                                    <br>
-                                    <div class="align-center padding10">
-                                        <button class="button primary" ng-click="confirmPurchase('OK')">OK</button>
-                                        <button class="button danger" ng-click="confirmPurchase('Deny')">Deny</button>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
 
                     </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class = "col-md-9" id = "chartt">
         </div>
     </div>
 
